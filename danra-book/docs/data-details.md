@@ -4,7 +4,7 @@ This section describes special parameters in the DANRA dataset.
 ## Special parameters
 The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
 
-### Preipitation type
+### Precipitation type
 The precipitation type describes the most prevalent type of precipitation in the given time frame. The following types are available:
 | Code | Description |
 |------|-------------|
