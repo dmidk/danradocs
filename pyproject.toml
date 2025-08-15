@@ -1,0 +1,22 @@
+[project]
+name = "danra-book"
+version = "0.1.0"
+description = "A jupyter book for DANRA"
+authors = [
+    {name = "Kasper Hintz", email = "kah@dmi.dk"},
+    {name = "Søren Borg Thorsen", email = "sbn@dmi.dk"}
+]
+dependencies = [
+    "jupyter-book>=1.0.0",
+    "xarray>=2024.5.0",
+    "eccodes>=1.7.0",
+    "dask>=2024.5.2",
+    "gcsfs>=2024.6.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false

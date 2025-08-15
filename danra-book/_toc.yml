@@ -1,0 +1,20 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: about
+    chapters:
+    - file: about
+    - file: notebooks/case-study
+    - file: notebooks/distributions
+  - caption: documentation
+    chapters:
+    - file: docs/documentation.md
+    - file: docs/introduction.md
+    - file: docs/data-availability.md
+    - file: docs/data-formats.md
+    - file: docs/data-details.md
+    - file: docs/annex.md
+    - file: docs/references.md
