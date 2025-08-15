@@ -1,10 +1,13 @@
 # DANRA Parameters
 
+DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.
+
 <details>
 <summary>Single Levels</summary>
 
 ## Single level parameters
 
+Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
 | cape_column | atmosphere_convective_available_potential_energy_wrt_surface | CAPE out of the model | J kg-1 |
@@ -45,6 +48,7 @@
 
 ## Height level parameters
 
+Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
 ### Available height levels (m)
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
@@ -63,6 +67,9 @@
 <details>
 <summary>Pressure Levels</summary>
 
+## Pressure level parameters
+
+Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.
 ### Available pressure levels (hPa)
 
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100
