@@ -1,5 +1,9 @@
+# DANRA Parameters
+
 <details>
-<summary>## Single Levels</summary>
+<summary>Single Levels</summary>
+
+## Single level parameters
 
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
@@ -37,11 +41,15 @@
 </details>
 
 <details>
-<summary>## Height Levels</summary>
+<summary>Height Levels</summary>
 
-**Available height levels (m):**
+## Height level parameters
+
+### Available height levels (m)
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
+
+### Available parameters
 
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
@@ -53,11 +61,13 @@
 </details>
 
 <details>
-<summary>## Pressure Levels</summary>
+<summary>Pressure Levels</summary>
 
-**Available pressure levels (hPa):**
+### Available pressure levels (hPa)
 
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100
+
+### Available parameters
 
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
