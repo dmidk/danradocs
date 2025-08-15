@@ -3,7 +3,7 @@ import xarray as xr
 import os
 import re
 
-def _retireve_variable_description(ds):
+def _retrieve_variable_description(ds):
     md_lines = [
         "| Variable Name | CF Standard Name | Description | Unit |",
         "|---------------|------------------|-------------|------|"
@@ -30,7 +30,7 @@ with open("parameters.md", "w") as f:
     f.write("<details>\n<summary>Single Levels</summary>\n\n")
     f.write("## Single level parameters\n\n")
     f.write("Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.\n")
-    f.write("\n".join(_retireve_variable_description(ds_danra_sl)))
+    f.write("\n".join(_retrieve_variable_description(ds_danra_sl)))
     f.write("\n</details>\n\n")
 
     # Height levels
@@ -43,7 +43,7 @@ with open("parameters.md", "w") as f:
         f.write(", ".join(str(a.item()) for a in altitudes.values))
         f.write("\n\n")
     f.write("### Available parameters\n\n")
-    f.write("\n".join(_retireve_variable_description(ds_danra_hl)))
+    f.write("\n".join(_retrieve_variable_description(ds_danra_hl)))
     f.write("\n</details>\n\n")
 
     # Pressure levels
@@ -56,5 +56,5 @@ with open("parameters.md", "w") as f:
         f.write(", ".join(str(p.item()) for p in pressures.values))
         f.write("\n\n")
     f.write("### Available parameters\n\n")
-    f.write("\n".join(_retireve_variable_description(ds_danra_pl)))
+    f.write("\n".join(_retrieve_variable_description(ds_danra_pl)))
     f.write("\n</details>\n")
