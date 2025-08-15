@@ -8,7 +8,7 @@ The data are archived in the internal DMI data archive and a pertinent sub-set o
 For a full technical description of the dataset, please refer to the @danratech.\
 
 ### Domain
-![DANRA Domain](danra-book/docs/DANRAdomain.png)\
+![DANRA Domain](danra-book/docs/figures/domain.png)\
 The DANRA domain covers the area bounded in a box spanning from roughly 47.5°N, 3.0°W to 65.5°N, 25.0°E (as seen in the figure above) on a Lambert Conformal grid centered around 56.7°N, 8.2°E.\
 The horizontal resolution is 2.5 km and the vertical resolution is 65 hybrid sigma/pressure levels. The complete domain spans 800x600 horizontal grid points, including an extension zone covering 11 grid points. Thus, output is available in 789x589 horizontal grid points.
 
