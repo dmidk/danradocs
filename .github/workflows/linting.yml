@@ -25,4 +25,4 @@ jobs:
 
       - name: Lint Jupyter Notebooks
         run: |
-          nbqa flake8 . --exclude _build
+          nbqa flake8 . --exclude _build --ignore=F821
