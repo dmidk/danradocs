@@ -4,12 +4,12 @@
 format: jb-book
 root: intro
 parts:
-  - caption: about
+  - caption: About
     chapters:
     - file: about
     - file: notebooks/distributions
     - file: notebooks/paper-figures
-  - caption: documentation
+  - caption: Documentation
     chapters:
     - file: docs/documentation.md
     - file: docs/description.md
