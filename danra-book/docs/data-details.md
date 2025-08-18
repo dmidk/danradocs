@@ -18,7 +18,7 @@ The precipitation type, `prtp0m,` describes the most prevalent type of precipita
 | 7    | Hail |
 
 ### Icing index
-The icing index is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
+The icing index, `icei0m` is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
 | Code | Description |
 |------|-------------|
 | 1    | Trace |
