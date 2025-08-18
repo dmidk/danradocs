@@ -7,8 +7,7 @@ parts:
   - caption: About
     chapters:
     - file: about
-    - file: notebooks/distributions
-    - file: notebooks/paper-figures
+
   - caption: Documentation
     chapters:
     - file: docs/documentation.md
@@ -18,3 +17,8 @@ parts:
     - file: docs/data-details.md
     - file: docs/annex.md
     - file: docs/references.md
+
+  - caption: User Examples
+    chapters:
+    - file: notebooks/distributions
+    - file: notebooks/paper-figures
