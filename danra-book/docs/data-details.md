@@ -1,4 +1,4 @@
-# Data details
+# Details about parameters
 This section describes special parameters in the DANRA dataset. 
 
 ## Special parameters
