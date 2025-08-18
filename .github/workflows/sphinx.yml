@@ -24,9 +24,9 @@ jobs:
                     pip install jupyter-book ghp-import
 
             - name: Build Jupyter Book
-              run: jupyter-book build .
+              run: jupyter-book build danra-book/
 
             - name: Deploy to GitHub Pages
               if: success()
               run: |
-                    ghp-import -n -p -f _build/html
+                    ghp-import -n -p -f danra-book/_build/html
