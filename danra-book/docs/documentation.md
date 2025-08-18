@@ -1,5 +1,4 @@
 # DANRA documentation
-User guide for the DANRA reanalysis.
 
 [Introduction](description.md)
 
