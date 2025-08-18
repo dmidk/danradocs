@@ -1,0 +1,28 @@
+name: Lint Jupyter Notebooks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-notebooks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install nbqa and flake8
+        run: |
+          python -m pip install --upgrade pip
+          pip install nbqa flake8
+
+      - name: Lint Jupyter Notebooks
+        run: |
+          nbqa flake8 . --nbqa-mutate --exclude _build
