@@ -27,4 +27,4 @@ The icing index, `icei0m` is a measure of the risk of icing in the atmosphere. T
 | 4    | Severe | 
 
 ### AROME Hail diagnostic
-The hail diagnostic is a measure of the risk of hail. It is the maximum total column graupel since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
+The hail diagnostic, `xhail0m,` is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
