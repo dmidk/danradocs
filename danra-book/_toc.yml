@@ -7,14 +7,14 @@ parts:
   - caption: about
     chapters:
     - file: about
-    - file: notebooks/case-study
     - file: notebooks/distributions
+    - file: notebooks/paper-figures
   - caption: documentation
     chapters:
     - file: docs/documentation.md
-    - file: docs/introduction.md
+    - file: docs/description.md
+    - file: docs/modelspecs.md
     - file: docs/data-availability.md
-    - file: docs/data-formats.md
     - file: docs/data-details.md
     - file: docs/annex.md
     - file: docs/references.md
