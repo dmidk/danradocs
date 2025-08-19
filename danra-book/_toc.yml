@@ -4,17 +4,21 @@
 format: jb-book
 root: intro
 parts:
-  - caption: about
+  - caption: About
     chapters:
     - file: about
-    - file: notebooks/case-study
-    - file: notebooks/distributions
-  - caption: documentation
+
+  - caption: Documentation
     chapters:
     - file: docs/documentation.md
-    - file: docs/introduction.md
+    - file: docs/description.md
+    - file: docs/modelspecs.md
     - file: docs/data-availability.md
-    - file: docs/data-formats.md
     - file: docs/data-details.md
     - file: docs/annex.md
     - file: docs/references.md
+
+  - caption: User Examples
+    chapters:
+    - file: notebooks/distributions
+    - file: notebooks/paper-figures

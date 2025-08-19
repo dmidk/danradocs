@@ -1,11 +1,10 @@
 # DANRA documentation
-User guide for the DANRA reanalysis.
 
-[Introduction](introduction.md)
+[Introduction](description.md)
+
+[Model specifications](modelspecs.md)
 
 [Data availability](data-availability.md)
-
-[Data formats](data-formats.md)
 
 [Details about parameters](data-details.md)
 

@@ -1,0 +1,25 @@
+name: Changelog Check
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Check for CHANGELOG.md update
+        run: |
+          if ! git fetch origin main --depth=1; then
+            echo "Failed to fetch main branch"
+            exit 1
+          fi
+          if git diff origin/main -- CHANGELOG.md; then
+            echo "CHANGELOG.md has been updated."
+          else
+            echo "You must update CHANGELOG.md before merging into main."
+            exit 1
+          fi
