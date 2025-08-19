@@ -2,7 +2,6 @@ name: Jupyter Book and GitHub Pages
 
 on:
     push:
-      branches: ["**"] # build on any branch
       tags: ["*"] # deploy on any tag
     pull_request: # build on any pull request
 
