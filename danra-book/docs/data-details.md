@@ -8,7 +8,7 @@ DANRA output is ordered into three main categories based on the vertical levels 
 <details>
 <summary>Single Levels</summary>
 
-### Single level parameters
+<h3>Single level parameters</h3>
 
 Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.
 | Variable Name | CF Standard Name | Description | Unit |
@@ -69,7 +69,7 @@ Height level refers to parameters that are defined at specific vertical levels i
 <details>
 <summary>Pressure Levels</summary>
 
-<h3>>Pressure level parameters</h3>
+<h3>Pressure level parameters</h3>
 
 Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.
 <h4>Available pressure levels (hPa)</h4>
@@ -92,10 +92,12 @@ Pressure level refers to parameters that are defined at specific pressure levels
 </details>
 
 
-## Special parameters
+<details>
+<summary>Special Parameters</summary>
+<h2> Special parameters</h2>
 The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
 
-### Precipitation type
+<h3>Precipitation type</h3>
 The precipitation type, `prtp0m,` describes the most prevalent type of precipitation in the given time frame. The following types are available:
 | Code | Description |
 |------|-------------|
@@ -108,7 +110,7 @@ The precipitation type, `prtp0m,` describes the most prevalent type of precipita
 | 6    | Graupel |
 | 7    | Hail |
 
-### Icing index
+<h3>Icing index</h3>
 The icing index, `icei0m` is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
 | Code | Description |
 |------|-------------|
@@ -117,5 +119,6 @@ The icing index, `icei0m` is a measure of the risk of icing in the atmosphere. T
 | 3    | Moderate |
 | 4    | Severe | 
 
-### AROME Hail diagnostic
+<h3>AROME Hail diagnostic</h3>
 The hail diagnostic, `xhail0m,` is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
+</details>
