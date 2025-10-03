@@ -1,6 +1,8 @@
 # Details about parameters
 This section describes special parameters in the DANRA dataset. 
 
+!include "../docs/parameters.md"
+
 ## Special parameters
 The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
 
