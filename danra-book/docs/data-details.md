@@ -52,11 +52,11 @@ Single level refers to parameters that are defined at a single vertical level in
 ### Height level parameters
 
 Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
-#### Available height levels (m)
+**Available height levels (m):**
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
 
-#### Available parameters
+**Available parameters**
 
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
@@ -73,11 +73,11 @@ Height level refers to parameters that are defined at specific vertical levels i
 ### Pressure level parameters
 
 Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.
-#### Available pressure levels (hPa)
+**Available pressure levels (hPa)**
 
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100
 
-#### Available parameters
+**Available parameters**
 
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
