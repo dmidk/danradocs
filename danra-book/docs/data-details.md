@@ -98,7 +98,7 @@ Pressure level refers to parameters that are defined at specific pressure levels
 The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
 
 <h3>Precipitation type</h3>
-The precipitation type, `prtp0m`, describes the most prevalent type of precipitation in the given time frame. The following types are available:
+The precipitation type, <code>prtp0m</code>, describes the most prevalent type of precipitation in the given time frame. The following types are available:
 
 | Code | Description |
 |------|-------------|
@@ -112,7 +112,7 @@ The precipitation type, `prtp0m`, describes the most prevalent type of precipita
 | 7    | Hail |
 
 <h3>Icing index</h3>
-The icing index, `icei0m`, is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
+The icing index, <code>icei0m</code>, is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
 
 | Code | Description |
 |------|-------------|
@@ -122,5 +122,5 @@ The icing index, `icei0m`, is a measure of the risk of icing in the atmosphere. 
 | 4    | Severe | 
 
 <h3>AROME Hail diagnostic</h3>
-The hail diagnostic, `xhail0m`, is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
+The hail diagnostic, <code>xhail0m</code>, is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
 </details>
