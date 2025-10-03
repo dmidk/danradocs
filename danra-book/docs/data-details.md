@@ -48,8 +48,13 @@ Single level refers to parameters that are defined at a single vertical level in
 
 <details>
 <summary>Height Levels</summary>
+<h3>Height level parameters</h3>
 
-### Height level parameters
+<h>Available height levels (m):**</h4>
+
+30, 50, 75, 100, 150, 200, 250, 300, 500
+
+<h4>Available parameters</h4>
 
 Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
 | Variable Name | CF Standard Name | Description | Unit |
