@@ -49,6 +49,7 @@ Single level refers to parameters that are defined at a single vertical level in
 <details>
 <summary>Height Levels</summary>
 <h3>Height level parameters</h3>
+Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
 
 <h>Available height levels (m):</h4>
 
@@ -56,7 +57,6 @@ Single level refers to parameters that are defined at a single vertical level in
 
 <h4>Available parameters</h4>
 
-Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
 | danra_projection |  |  |  |
@@ -99,6 +99,7 @@ The following parameters are encoded using a different schema than WMO standards
 
 <h3>Precipitation type</h3>
 The precipitation type, `prtp0m,` describes the most prevalent type of precipitation in the given time frame. The following types are available:
+
 | Code | Description |
 |------|-------------|
 | 0    | Drizzle |
@@ -112,6 +113,7 @@ The precipitation type, `prtp0m,` describes the most prevalent type of precipita
 
 <h3>Icing index</h3>
 The icing index, `icei0m` is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
+
 | Code | Description |
 |------|-------------|
 | 1    | Trace |
