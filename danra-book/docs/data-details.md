@@ -51,8 +51,7 @@ Single level refers to parameters that are defined at a single vertical level in
 
 ### Height level parameters
 
-
-
+Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
 | Variable Name | CF Standard Name | Description | Unit |
 |---------------|------------------|-------------|------|
 | danra_projection |  |  |  |
