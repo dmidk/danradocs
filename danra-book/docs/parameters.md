@@ -49,7 +49,7 @@ Single level refers to parameters that are defined at a single vertical level in
 ### Height level parameters
 
 Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
-#### Available height levels (m)
+#### Available height levels (meters)
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
 
