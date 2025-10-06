@@ -9,7 +9,7 @@ The DANRA reanalysis data, available at three-hour intervals at 00:00, 03:00, 06
 \end{itemize}
 
 Fetching one of these datasets with Python and xarray using simple loading is as simple as
-<code>
+```
 ds_danra_sl = xarray.open_zarr(
     "s3://dmi-danra-05/single_levels.zarr",
     consolidated=True,
@@ -17,6 +17,6 @@ ds_danra_sl = xarray.open_zarr(
         "anon": True,
     }
 )
-</code>
+```
 
 Efforts are currently underway to prepare the DANRA forecasts for public release. Once available, the dataset will provide hourly temporal resolution. Updates and further details will be posted on the website.
