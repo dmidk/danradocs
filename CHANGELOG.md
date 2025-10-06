@@ -4,6 +4,7 @@
 
 ## [v0.2.0] - 2025-10-06
 ### Added
+- Add availability statement ([#10](https://github.com/dmidk/danradocs/pull/10) @sbnielsen)
 - Add list of all parameters into data-details.md ([#10](https://github.com/dmidk/danradocs/pull/10) @sbnielsen)
 
 ## [v0.1.0] - 2025-09-09
