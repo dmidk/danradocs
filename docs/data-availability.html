@@ -191,8 +191,6 @@
 <li class="toctree-l1"><a class="reference internal" href="modelspecs.html">Model Specifications</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-details.html">Details about parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annex.html">Annex</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">User Examples</span></p>
 <ul class="nav bd-sidenav">
@@ -397,6 +395,24 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data-availability">
 <h1>Data Availability<a class="headerlink" href="#data-availability" title="Link to this heading">#</a></h1>
+<p>DANRA reanalysis consists of gridded data for a large number of weather and climate variables, both at 3-hourly analysis time. Some of the parameters are defined on height or pressure levels, the rest are on a single level.</p>
+<p>The DANRA reanalysis data, available at three-hour intervals at 00:00, 03:00, 06:00, …, and 21:00 UTC daily (analysis data), can be accessed from an Amazon S3 object store. The data is split into three different Zarr datasets:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#s3://dmi-danra-05/height_levels.zarr"><span class="xref myst">s3://dmi-danra-05/height_levels.zarr</span></a></p></li>
+<li><p><a class="reference internal" href="#s3://dmi-danra-05/single_levels.zarr"><span class="xref myst">s3://dmi-danra-05/single_levels.zarr</span></a></p></li>
+<li><p><a class="reference internal" href="#s3://dmi-danra-05/pressure_levels.zarr"><span class="xref myst">s3://dmi-danra-05/pressure_levels.zarr</span></a></p></li>
+</ul>
+<p>Fetching one of these datasets with Python and xarray using simple loading is as simple as</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ds_danra_sl</span> <span class="o">=</span> <span class="n">xarray</span><span class="o">.</span><span class="n">open_zarr</span><span class="p">(</span>
+    <span class="s2">&quot;s3://dmi-danra-05/single_levels.zarr&quot;</span><span class="p">,</span>
+    <span class="n">consolidated</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">storage_options</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;anon&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Efforts are currently underway to prepare the DANRA forecasts for public release. Once available, the dataset will provide hourly temporal resolution. Updates and further details will be posted on the website.</p>
 </section>
 
     <script type="text/x-thebe-config">

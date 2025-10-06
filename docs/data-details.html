@@ -61,7 +61,7 @@
     <link rel="author" title="About these documents" href="../about.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Annex" href="annex.html" />
+    <link rel="next" title="Looking at distributions" href="../notebooks/distributions.html" />
     <link rel="prev" title="Data Availability" href="data-availability.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -191,8 +191,6 @@
 <li class="toctree-l1"><a class="reference internal" href="modelspecs.html">Model Specifications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-availability.html">Data Availability</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Details about parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="annex.html">Annex</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">User Examples</span></p>
 <ul class="nav bd-sidenav">
@@ -393,12 +391,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-parameters">Special parameters</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precipitation-type">Precipitation type</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#icing-index">Icing index</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arome-hail-diagnostic">AROME Hail diagnostic</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danra-parameters">DANRA Parameters</a></li>
 </ul>
             </nav>
         </div>
@@ -413,12 +406,297 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="details-about-parameters">
 <h1>Details about parameters<a class="headerlink" href="#details-about-parameters" title="Link to this heading">#</a></h1>
 <p>This section describes special parameters in the DANRA dataset.</p>
-<section id="special-parameters">
-<h2>Special parameters<a class="headerlink" href="#special-parameters" title="Link to this heading">#</a></h2>
-<p>The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.</p>
-<section id="precipitation-type">
-<h3>Precipitation type<a class="headerlink" href="#precipitation-type" title="Link to this heading">#</a></h3>
-<p>The precipitation type, <code class="docutils literal notranslate"><span class="pre">prtp0m,</span></code> describes the most prevalent type of precipitation in the given time frame. The following types are available:</p>
+<section id="danra-parameters">
+<h2>DANRA Parameters<a class="headerlink" href="#danra-parameters" title="Link to this heading">#</a></h2>
+<p>DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.</p>
+<details>
+<summary>Single Levels</summary>
+<h3>Single level parameters</h3>
+<p>Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>cape_column</p></td>
+<td><p>atmosphere_convective_available_potential_energy_wrt_surface</p></td>
+<td><p>CAPE out of the model</p></td>
+<td><p>J kg-1</p></td>
+</tr>
+<tr class="row-odd"><td><p>cb_column</p></td>
+<td><p>cloud_base_altitude</p></td>
+<td><p>Cloud base</p></td>
+<td><p>m</p></td>
+</tr>
+<tr class="row-even"><td><p>ct_column</p></td>
+<td><p>cloud_top_altitude</p></td>
+<td><p>Cloud top</p></td>
+<td><p>m</p></td>
+</tr>
+<tr class="row-odd"><td><p>danra_projection</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>grpl_column</p></td>
+<td><p>atmosphere_mass_content_of_graupel</p></td>
+<td><p>Graupel</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>hcc0m</p></td>
+<td><p>high_type_cloud_area_fraction</p></td>
+<td><p>High cloud cover</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>icei0m</p></td>
+<td><p></p></td>
+<td><p>Icing index</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>lcc0m</p></td>
+<td><p>low_type_cloud_area_fraction</p></td>
+<td><p>Low cloud cover</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p>lsm</p></td>
+<td><p>land_binary_mask</p></td>
+<td><p>Land cover (1=land, 0=sea)</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>lwavr0m</p></td>
+<td><p></p></td>
+<td><p>Long-wave radiation flux</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>mcc0m</p></td>
+<td><p>medium_type_cloud_area_fraction</p></td>
+<td><p>Medium cloud cover</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>mld0m</p></td>
+<td><p>atmosphere_boundary_layer_thickness</p></td>
+<td><p>Mixed layer depth</p></td>
+<td><p>m</p></td>
+</tr>
+<tr class="row-even"><td><p>orography</p></td>
+<td><p></p></td>
+<td><p>Geopotential</p></td>
+<td><p>m<sup>2</sup> s<sup>-2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>pres0m</p></td>
+<td><p>air_pressure</p></td>
+<td><p>Pressure</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-even"><td><p>pres_seasurface</p></td>
+<td><p>air_pressure_at_mean_sea_level</p></td>
+<td><p>Pressure</p></td>
+<td><p>Pa</p></td>
+</tr>
+<tr class="row-odd"><td><p>prtp0m</p></td>
+<td><p></p></td>
+<td><p>Precipitation Type</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>psct0m</p></td>
+<td><p>brightness_temperature_at_cloud_top</p></td>
+<td><p>Pseudo satellite image: cloud top temperature (infrared)</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-odd"><td><p>pscw0m</p></td>
+<td><p></p></td>
+<td><p>Pseudo satellite image: cloud water reflectivity (visible)</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>pstb0m</p></td>
+<td><p></p></td>
+<td><p>Pseudo satellite image: water vapour Tb</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>pstbc0m</p></td>
+<td><p></p></td>
+<td><p>Pseudo satellite image: water vapour Tb + correction for clouds</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>pwat_column</p></td>
+<td><p>atmosphere_mass_content_of_water_vapor</p></td>
+<td><p>Precipitable water</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>r2m</p></td>
+<td><p>relative_humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-even"><td><p>sf0m</p></td>
+<td><p>snowfall_amount</p></td>
+<td><p>Water equivalent of accumulated snow depth</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>swavr0m</p></td>
+<td><p></p></td>
+<td><p>Short-wave radiation flux</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>t0m</p></td>
+<td><p>air_temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-odd"><td><p>t2m</p></td>
+<td><p>air_temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-even"><td><p>tcc0m</p></td>
+<td><p>cloud_area_fraction</p></td>
+<td><p>Total cloud cover</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p>u10m</p></td>
+<td><p>x_wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>v10m</p></td>
+<td><p>y_wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>vis0m</p></td>
+<td><p>visibility_in_air</p></td>
+<td><p>Visibility</p></td>
+<td><p>m</p></td>
+</tr>
+<tr class="row-even"><td><p>xhail0m</p></td>
+<td><p></p></td>
+<td><p>AROME hail diagnostic</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Height Levels</summary>
+<h3>Height level parameters</h3>
+Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
+<p><h>Available height levels (meters):</h4></p>
+<p>30, 50, 75, 100, 150, 200, 250, 300, 500</p>
+<h4>Available parameters</h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>danra_projection</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>r</p></td>
+<td><p>relative_humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-even"><td><p>t</p></td>
+<td><p>air_temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-odd"><td><p>u</p></td>
+<td><p>x_wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>v</p></td>
+<td><p>y_wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Pressure Levels</summary>
+<h3>Pressure level parameters</h3>
+<p>Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.</p>
+<h4>Available pressure levels (hPa)</h4>
+<p>1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100</p>
+<h4>Available parameters</h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ciwc</p></td>
+<td><p>atmosphere_mass_content_of_cloud_ice</p></td>
+<td><p>Cloud ice</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>cwat</p></td>
+<td><p>atmosphere_mass_content_of_cloud_liquid_water</p></td>
+<td><p>Cloud water</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>danra_projection</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>r</p></td>
+<td><p>relative_humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>%</p></td>
+</tr>
+<tr class="row-even"><td><p>t</p></td>
+<td><p>air_temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+</tr>
+<tr class="row-odd"><td><p>tw</p></td>
+<td><p>upward_air_velocity</p></td>
+<td><p>Vertical velocity</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>u</p></td>
+<td><p>x_wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>v</p></td>
+<td><p>y_wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+</tr>
+<tr class="row-even"><td><p>z</p></td>
+<td><p>geopotential</p></td>
+<td><p>Geopotential</p></td>
+<td><p>m<sup>2</sup> s<sup>-2</sup></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Special Parameters</summary>
+<h2> Special parameters</h2>
+The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
+<h3>Precipitation type</h3>
+The precipitation type, <code>prtp0m</code>, describes the most prevalent type of precipitation in the given time frame. The following types are available:
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Code</p></th>
@@ -453,10 +731,8 @@ document.write(`
 </tbody>
 </table>
 </div>
-</section>
-<section id="icing-index">
-<h3>Icing index<a class="headerlink" href="#icing-index" title="Link to this heading">#</a></h3>
-<p>The icing index, <code class="docutils literal notranslate"><span class="pre">icei0m</span></code> is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:</p>
+<h3>Icing index</h3>
+The icing index, <code>icei0m</code>, is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels:
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Code</p></th>
@@ -479,12 +755,9 @@ document.write(`
 </tbody>
 </table>
 </div>
-</section>
-<section id="arome-hail-diagnostic">
-<h3>AROME Hail diagnostic<a class="headerlink" href="#arome-hail-diagnostic" title="Link to this heading">#</a></h3>
-<p>The hail diagnostic, <code class="docutils literal notranslate"><span class="pre">xhail0m,</span></code> is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.</p>
-</section>
-</section>
+<h3>AROME Hail diagnostic</h3>
+The hail diagnostic, <code>xhail0m</code>, is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
+</details></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -527,11 +800,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="annex.html"
+       href="../notebooks/distributions.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Annex</p>
+        <p class="prev-next-title">Looking at distributions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,12 +824,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-parameters">Special parameters</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#precipitation-type">Precipitation type</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#icing-index">Icing index</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arome-hail-diagnostic">AROME Hail diagnostic</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danra-parameters">DANRA Parameters</a></li>
 </ul>
   </nav></div>
 
