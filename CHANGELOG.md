@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- Add zenodo metadata for easier integration with zenodo ([#13](https://github.com/dmidk/danradocs/pull/13) @observingClouds)
 
 ## [v0.2.1] - 2025-10-07
 ### Fixed
