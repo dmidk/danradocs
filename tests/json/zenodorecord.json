@@ -227,7 +227,7 @@
       "type": "string"
     },
     "publication_date": {
-      "description": "Record publication date (IS8601-formatted). EDTF support to be added for field.",
+      "description": "Record publication date (ISO8601-formatted). EDTF support to be added for field.",
       "type": "string"
     },
     "references": {
@@ -269,7 +269,7 @@
               "isCompiledBy",
               "compiles",
               "isVariantFormOf",
-              "isOrignialFormOf",
+              "isOriginalFormOf",
               "isIdenticalTo",
               "isAlternateIdentifier",
               "isReviewedBy",
