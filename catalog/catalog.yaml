@@ -1,0 +1,30 @@
+metadata:
+  version: 1
+
+sources:
+  single_levels:
+    description: DANRA single level parameters (surface and near-surface data)
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-05/single_levels.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  height_levels:
+    description: DANRA height level parameters (upper-air data)
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-05/height_levels.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  pressure_levels:
+    description: DANRA pressure level parameters (upper-air data)
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-05/pressure_levels.zarr
+      storage_options:
+        anon: true
+      consolidated: true
