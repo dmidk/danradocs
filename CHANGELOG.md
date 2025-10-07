@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [v0.2.1] - 2025-10-07
+### Fixed
+- Correct link to default repository on the danra-book website ([!11](https://github.com/dmidk/danradocs/pull/11, @khintz))
+
 ## [v0.2.0] - 2025-10-06
 ### Added
 - Add availability statement ([#10](https://github.com/dmidk/danradocs/pull/10) @sbnielsen)
