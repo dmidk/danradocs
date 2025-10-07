@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+### Added
+- Add intake catalog for danra data and weekly availability test ([#12](https://github.com/dmidk/danradocs/pull/12) @observingClouds)
 
 ## [v0.2.1] - 2025-10-07
 ### Fixed
