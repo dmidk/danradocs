@@ -12,9 +12,6 @@ dependencies = [
     "eccodes>=1.7.0",
     "dask>=2024.5.2",
     "gcsfs>=2024.6.0",
-    "intake>=0.7.0",
-    "intake-xarray>=0.7.0",
-    "s3fs>=2024.6.0",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
