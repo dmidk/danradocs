@@ -9,33 +9,27 @@ type: dataset
 authors:
   - given-names: Xiaohua
     family-names: Yang
-    name-suffix: PhD
     email: xiaohua@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Carlos
     family-names: Peralta
-    name-suffix: PhD
     email: cap@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Bjarne
     family-names: Amstrup
-    name-suffix: PhD
     email: bja@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Kasper Stener
     family-names: Hintz
-    name-suffix: PhD
     email: kah@dmi.dk
     affiliation: Danish Meteorological Institute
     orcid: 'https://orcid.org/0000-0002-6835-8733'
   - given-names: Søren Borg
     family-names: Thorsen
-    name-suffix: PhD
     email: sbn@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Leif
     family-names: Denby
-    name-suffix: PhD
     email: lcd@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Simon Kamuk
@@ -44,7 +38,6 @@ authors:
     affiliation: Danish Meteorological Institute
   - given-names: Hauke
     family-names: Schulz
-    name-suffix: PhD
     email: has@dmi.dk
     affiliation: Danish Meteorological Institute
   - given-names: Sebastian
@@ -53,7 +46,6 @@ authors:
     affiliation: Danish Meteorological Institute
   - given-names: Mathias
     family-names: Schreiner
-    name-suffix: PhD
     email: masc@dmi.dk
     affiliation: Danish Meteorological Institute
 identifiers:
@@ -97,3 +89,51 @@ keywords:
   - Reanalysis
   - Meteorology
 license: CC-BY-4.0
+preferred-citation:
+  type: article
+  authors:
+  - given-names: Xiaohua
+    family-names: Yang
+    email: xiaohua@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Carlos
+    family-names: Peralta
+    email: cap@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Bjarne
+    family-names: Amstrup
+    email: bja@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Kasper Stener
+    family-names: Hintz
+    email: kah@dmi.dk
+    affiliation: Danish Meteorological Institute
+    orcid: 'https://orcid.org/0000-0002-6835-8733'
+  - given-names: Søren Borg
+    family-names: Thorsen
+    email: sbn@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Leif
+    family-names: Denby
+    email: lcd@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Simon Kamuk
+    family-names: Christiansen
+    email: skc@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Hauke
+    family-names: Schulz
+    email: has@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Sebastian
+    family-names: Pelt
+    email: sep@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Mathias
+    family-names: Schreiner
+    email: masc@dmi.dk
+    affiliation: Danish Meteorological Institute
+  doi: "10.48550/arXiv.2510.04681"
+  journal: "ArXiv (pre-print)"
+  title: "DANRA: The Kilometer-Scale Danish Regional Atmospheric Reanalysis"
+  year: 2025
