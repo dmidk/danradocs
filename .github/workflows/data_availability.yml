@@ -20,4 +20,4 @@ jobs:
           enable-cache: true
 
       - name: Check data availability
-        run: uv run --with intake,intake-xarray,jinja2,zarr,s3fs --no-project python tests/check_data_availability.py
+        run: uv run python tests/check_data_availability.py
