@@ -24,12 +24,12 @@ jobs:
                     python-version: '3.10'
 
             - name: Install dependencies
-              run: |
-                    python -m pip install --upgrade pip
-                    pip install jupyter-book ghp-import
+              uses: astral-sh/setup-uv@v2
+              with:
+                    enable-cache: true
 
             - name: Build Jupyter Book
-              run: jupyter-book build danra-book/
+              run: uv run jupyter-book build danra-book/
 
             - name: Upload Jupyter Book as artifact (for debugging)
               uses: actions/upload-artifact@v4
@@ -40,4 +40,4 @@ jobs:
             - name: Deploy to GitHub Pages
               if: startsWith(github.ref, 'refs/tags/')
               run: |
-                    ghp-import -n -p -f danra-book/_build/html
+                    uv run ghp-import -n -p -f danra-book/_build/html
