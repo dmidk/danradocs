@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Added
+- Add citation info via CITATION.cff file ([#17](https://github.com/dmidk/danradocs/pull/17) @khintz)
+
 ## [v0.2.2] - 2025-10-08
 ### Added
 - Add zenodo metadata for easier integration with zenodo ([#13](https://github.com/dmidk/danradocs/pull/13) @observingClouds)
