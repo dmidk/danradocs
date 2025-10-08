@@ -27,7 +27,7 @@ list(cat)
 Individual datasets can be loaded with xarray via the catalog:
 
 ```{code-cell} ipython3
-ds_danra_sl = cat.danra_single_levels.to_dask()
+ds_danra_sl = cat.single_levels.to_dask()
 ds_danra_sl
 ```
 
