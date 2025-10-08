@@ -1,0 +1,139 @@
+cff-version: 1.2.0
+title: >-
+  DANRA: The Kilometer-Scale Danish Regional Atmospheric
+  Reanalysis
+message: >-
+  If you use this software or the dataset it created, please
+  cite it as below.
+type: dataset
+authors:
+  - given-names: Xiaohua
+    family-names: Yang
+    email: xiaohua@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Carlos
+    family-names: Peralta
+    email: cap@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Bjarne
+    family-names: Amstrup
+    email: bja@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Kasper Stener
+    family-names: Hintz
+    email: kah@dmi.dk
+    affiliation: Danish Meteorological Institute
+    orcid: 'https://orcid.org/0000-0002-6835-8733'
+  - given-names: Søren Borg
+    family-names: Thorsen
+    email: sbn@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Leif
+    family-names: Denby
+    email: lcd@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Simon Kamuk
+    family-names: Christiansen
+    email: skc@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Hauke
+    family-names: Schulz
+    email: has@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Sebastian
+    family-names: Pelt
+    email: sep@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Mathias
+    family-names: Schreiner
+    email: masc@dmi.dk
+    affiliation: Danish Meteorological Institute
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2510.04681
+    description: The ArXiv deposit of the encompassing paper.
+  - type: doi
+    value: 10.5281/zenodo.17294179
+    description: Zenodo DOI for the data
+repository-code: 'https://github.com/dmidk/danradocs'
+url: 'https://dmidk.github.io/danradocs/intro.html'
+abstract: >-
+  The DANish regional atmospheric ReAnalysis (DANRA) is a
+  novel high-resolution (2.5 km) reanalysis dataset covering
+  Denmark and its surrounding regions over a 34-year period
+  (1990-2023). Denmark's complex coastline, with over 400
+  islands and an extensive 7,400 km coastline, means that
+  most municipalities experience mixed land-sea variability.
+  This complexity requires a regional climate reanalysis
+  that can resolve fine-scale coastal and inland features,
+  as well as their impact on climate variability. DANRA is
+  based on the HARMONIE-AROME Numerical Weather Prediction
+  (NWP) model and assimilates a comprehensive set of
+  observations, with a particular focus on Denmark. Compared
+  to global reanalyses such as the ECMWF Reanalysis v5
+  (ERA5), DANRA demonstrates superior performance in
+  representing essential climate variables, including
+  near-surface weather parameters during both extreme and
+  ordinary conditions. We illustrate these improvements in
+  the representation of several extreme weather cases over
+  Denmark, such as the December 1999 hurricane-force storm,
+  the July 2022 national temperature record, and the August
+  2007 cloudburst in South Jutland. DANRA is made to support
+  climate adaptation, impact modelling, and the training of
+  next-generation data-driven atmospheric forecasting
+  models. DANRA is distributed as Zarr dataset freely
+  accessible from an object store, maximizing its usability
+  for climate adaptation, impact modelling, and data-driven
+  research.
+keywords:
+  - Reanalysis
+  - Meteorology
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  authors:
+  - given-names: Xiaohua
+    family-names: Yang
+    email: xiaohua@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Carlos
+    family-names: Peralta
+    email: cap@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Bjarne
+    family-names: Amstrup
+    email: bja@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Kasper Stener
+    family-names: Hintz
+    email: kah@dmi.dk
+    affiliation: Danish Meteorological Institute
+    orcid: 'https://orcid.org/0000-0002-6835-8733'
+  - given-names: Søren Borg
+    family-names: Thorsen
+    email: sbn@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Leif
+    family-names: Denby
+    email: lcd@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Simon Kamuk
+    family-names: Christiansen
+    email: skc@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Hauke
+    family-names: Schulz
+    email: has@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Sebastian
+    family-names: Pelt
+    email: sep@dmi.dk
+    affiliation: Danish Meteorological Institute
+  - given-names: Mathias
+    family-names: Schreiner
+    email: masc@dmi.dk
+    affiliation: Danish Meteorological Institute
+  doi: "10.48550/arXiv.2510.04681"
+  journal: "ArXiv"
+  title: "DANRA: The Kilometer-Scale Danish Regional Atmospheric Reanalysis"
+  year: 2025

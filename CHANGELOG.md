@@ -2,11 +2,13 @@
 
 ## [Unreleased]
 ### Added
+- Add citation info via CITATION.cff file ([#17](https://github.com/dmidk/danradocs/pull/17) @khintz)
 - Add documentation on how to access DANRA output via intake catalog ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 - Add links to preprint and documentation as badges in README.md ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 ### Changed
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
+
 
 ## [v0.2.2] - 2025-10-08
 ### Added
