@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [v0.2.2] - 2025-10-08
 ### Added
 - Add zenodo metadata for easier integration with zenodo ([#13](https://github.com/dmidk/danradocs/pull/13) @observingClouds)
 - Add intake catalog for danra data and weekly availability test ([#12](https://github.com/dmidk/danradocs/pull/12) @observingClouds)
