@@ -5,7 +5,7 @@
 
 # danra-book
 
-This is a jupyter book for the DANRA (Danish Reanalysis) project and dataset.
+This is the jupyter book for the DANRA (Danish Reanalysis) project and dataset.
 
 ## Overview
 
@@ -13,7 +13,7 @@ This Jupyter book serves as an interactive guide and documentation for the DANRA
 
 ## Getting Started
 
-To get started with the DANRA book, you can clone the repository and install the required dependencies.
+To get started with the DANRA book, either visit the documentation at https://dmidk.github.io/danradocs/ or clone the repository and install the required dependencies to run the notebooks locally.
 We recommend using PDM to create a virtual environment to manage the dependencies.
 
 ```bash
