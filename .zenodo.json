@@ -1,0 +1,50 @@
+{
+    "title": "DANRA",
+    "description": "DANRA: The Kilometer-Scale Danish Regional Atmospheric Reanalysis dataset and documentation",
+    "communities": [],
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "upload_type": "dataset",
+    "creators": [
+        {
+            "name": "Xiaohua Yang",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Carlos Peralta",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Bjarne Amstrup",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Kasper Stener Hintz",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Søren Borg Thorsen",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Leif Denby",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Simon Kamuk Christiansen",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Hauke Schulz",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Sebastian Pelt",
+            "affiliation": "Danish Meteorological Institute"
+        },
+        {
+            "name": "Mathias Schreiner",
+            "affiliation": "Danish Meteorological Institute"
+        }
+    ]
+}
