@@ -18,6 +18,7 @@ bibtex_bibfiles:
 execute:
   execute_notebooks: auto
   allow_errors: false
+  timeout: 7200
 
 # Information about where the book exists on the web
 repository:
