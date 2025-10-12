@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: introduction
 parts:
   - caption: About
     chapters:
@@ -15,8 +15,6 @@ parts:
     - file: docs/modelspecs.md
     - file: docs/data-availability.md
     - file: docs/data-details.md
-#    - file: docs/annex.md
-#    - file: docs/references.md
 
   - caption: User Examples
     chapters:
