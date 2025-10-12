@@ -43,7 +43,7 @@ jobs:
                 chmod 600 ~/.cdsapirc
 
             - name: Build Jupyter Book
-              run: uv run jupyter-book build danra-book/
+              run: uv run jupyter-book build -W -n --keep-going danra-book/
 
             - name: Upload Jupyter Book as artifact (for debugging)
               uses: actions/upload-artifact@v4
