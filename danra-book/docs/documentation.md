@@ -9,7 +9,3 @@
 [Details about parameters](data-details.md)
 
 [Known issues](https://github.com/dmidk/danradocs/issues)
-
-[Annex](annex.md)
-
-[References](references.md)
