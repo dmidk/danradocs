@@ -28,6 +28,14 @@ jobs:
               with:
                     enable-cache: true
 
+            - name: Setup cache
+              uses: actions/cache@v4
+              with:
+                path: |
+                  $TMPDIR/*.pkl
+                  $TMPDIR/*.grib
+                key: danra-${{ hashFiles('danra-book/scripts/utils.py') }}
+
             - name: Write CDS API key (needed for notebooks/paper-figures.ipynb)
               run: |
                 echo "url: https://cds.climate.copernicus.eu/api" > ~/.cdsapirc
