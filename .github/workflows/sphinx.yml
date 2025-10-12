@@ -28,11 +28,26 @@ jobs:
               with:
                     enable-cache: true
 
+            - name: Setup cache
+              uses: actions/cache@v4
+              with:
+                path: |
+                  $TMPDIR/*.pkl
+                  $TMPDIR/*.grib
+                key: danra-${{ hashFiles('danra-book/scripts/utils.py') }}
+
+            - name: Write CDS API key (needed for notebooks/paper-figures.ipynb)
+              run: |
+                echo "url: https://cds.climate.copernicus.eu/api" > ~/.cdsapirc
+                echo "key: ${{ secrets.CDS_API_KEY}}" >> ~/.cdsapirc
+                chmod 600 ~/.cdsapirc
+
             - name: Build Jupyter Book
-              run: uv run jupyter-book build danra-book/
+              run: uv run jupyter-book build -W -n --keep-going danra-book/
 
             - name: Upload Jupyter Book as artifact (for debugging)
               uses: actions/upload-artifact@v4
+              if: always()
               with:
                     name: jupyter-book
                     path: danra-book/_build/html

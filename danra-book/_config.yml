@@ -6,12 +6,6 @@ author: DMI NWP Team
 logo: logo.png
 copyright: '2025'
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
-execute:
-  exclude_patterns:
-    - 'notebooks/**.ipynb'  # exclude all notebooks in the notebooks folder
-
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
@@ -20,6 +14,11 @@ latex:
 # Add a bibtex file so that we can create citations
 bibtex_bibfiles:
   - references.bib
+
+execute:
+  execute_notebooks: auto
+  allow_errors: false
+  timeout: 7200
 
 # Information about where the book exists on the web
 repository:

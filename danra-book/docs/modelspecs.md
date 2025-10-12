@@ -11,7 +11,7 @@ The boundary conditions for the DANRA reanalysis are derived from the ECMWF Glob
 The DANRA dataset uses a Lambert Conic Conformal projection with the following specifications:
 
 ### CRS WKT
-```wkt
+```
 PROJCRS["DMI HARMONIE DANRA lambert projection",
     BASEGEOGCRS["DMI HARMONIE DANRA lambert CRS",
         DATUM["DMI HARMONIE DANRA lambert datum",

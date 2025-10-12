@@ -33,9 +33,9 @@ ds_danra_sl
 
 Alternatively, the data can be accessed directly from the S3 object store:
 
-- [s3://dmi-danra-05/height_levels.zarr](s3://dmi-danra-05/height_levels.zarr)
-- [s3://dmi-danra-05/single_levels.zarr](s3://dmi-danra-05/single_levels.zarr)
-- [s3://dmi-danra-05/pressure_levels.zarr](s3://dmi-danra-05/pressure_levels.zarr)
+- [s3://dmi-danra-05/height_levels.zarr](https://registry.opendata.aws/dmi-danra-05/)
+- [s3://dmi-danra-05/single_levels.zarr](https://registry.opendata.aws/dmi-danra-05/)
+- [s3://dmi-danra-05/pressure_levels.zarr](https://registry.opendata.aws/dmi-danra-05/)
 
 Fetching one of these datasets with Python and xarray using simple loading is as simple as
 ```
