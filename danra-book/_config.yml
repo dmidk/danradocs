@@ -15,6 +15,10 @@ latex:
 bibtex_bibfiles:
   - references.bib
 
+execute:
+  execute_notebooks: auto
+  allow_errors: false
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/dmidk/danradocs # Online location of your book
