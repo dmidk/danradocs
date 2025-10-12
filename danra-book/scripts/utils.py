@@ -1,10 +1,12 @@
-from loguru import logger
-import scipy.spatial
 import pickle
 import tempfile
 from pathlib import Path
 
+import scipy.spatial
+from loguru import logger
+
 LOOKUP_INFO = {}
+
 
 def sel_nearest_to_latlon_pt(ds, pt, wrap_lon=True):
     """
@@ -38,7 +40,9 @@ def sel_nearest_to_latlon_pt(ds, pt, wrap_lon=True):
 
     @cache_to_pickle(identifier)
     def build_tree():
-        logger.info(f"Building nearest-point to lat/lon lookup tree for {identifier}")
+        logger.info(
+            f"Building nearest-point to lat/lon lookup tree for {identifier}"
+        )
         values = list(zip(ds.lon.values.flatten(), ds.lat.values.flatten()))
         tree_kdtree = scipy.spatial.cKDTree(values)
         latlon_bounds = dict(
@@ -81,6 +85,7 @@ def sel_nearest_to_latlon_pt(ds, pt, wrap_lon=True):
         ds_point["lon"] = ds_point["lon"] - applied_lon_offset
 
     return ds_point
+
 
 def cache_to_pickle(identifier):
     """

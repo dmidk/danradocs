@@ -1,5 +1,5 @@
 # Details about parameters
-This section describes special parameters in the DANRA dataset. 
+This section describes special parameters in the DANRA dataset.
 
 ## DANRA Parameters
 
@@ -119,7 +119,7 @@ The icing index, <code>icei0m</code>, is a measure of the risk of icing in the a
 | 1    | Trace |
 | 2    | Light |
 | 3    | Moderate |
-| 4    | Severe | 
+| 4    | Severe |
 
 <h3>AROME Hail diagnostic</h3>
 The hail diagnostic, <code>xhail0m</code>, is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
