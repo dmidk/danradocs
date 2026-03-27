@@ -1,5 +1,5 @@
 # Description
-The [DANRA dataset](https://essd.copernicus.org/articles/18/2251/2026/) covers the period from September 1990 to December 2023.
+The [DANRA dataset](https://doi.org/10.5194/essd-18-2251-2026) covers the period from September 1990 to December 2023.
 DANRA is produced using three-dimensional variational (3D-Var) data assimilation and model forecasts with a reanalysis system based on the adapted Harmonie-Arome CY40h1.1 forecast system ([Bengtsson et al., 2017](https://journals.ametsoc.org/view/journals/mwre/145/5/mwr-d-16-0417.1.xml)).
 DANRA runs on a horizontal grid mesh of 800 x 600 at 2.5 km grid size, with 65 hybrid sigma/pressure (model) levels in the vertical, with the bottom level at around 12 meters height and the top level at 10 hPa.
 For data assimilation, quality-controlled local observation data from synoptic stations in Denmark and nearby countries have been added, along with conventional weather observations collected from the Global Telecommunication System (GTS) for synoptic, ship, drift buoy, radiosonde, and aircraft observations, as well as satellite remote sensing data of radiance, atmospheric motion vectors (AMV), scatterometer, and radio occultation.
