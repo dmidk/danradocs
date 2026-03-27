@@ -50,8 +50,8 @@ authors:
     affiliation: Danish Meteorological Institute
 identifiers:
   - type: doi
-    value: 10.48550/arXiv.2510.04681
-    description: The ArXiv deposit of the encompassing paper.
+    value: 10.5194/essd-18-2251-2026
+    description: The DOI of the encompassing paper.
   - type: doi
     value: 10.5281/zenodo.17294179
     description: Zenodo DOI for the data
