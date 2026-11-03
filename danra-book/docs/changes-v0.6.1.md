@@ -36,7 +36,7 @@ If you used any of the following with v0.5.0, check your results:
 - **`ciwc` and `cwat`** are the mass fractions of cloud ice and cloud water on each pressure level, in kg kg<sup>-1</sup>. v0.5.0 incorrectly described them as column totals in kg m<sup>-2</sup>.
 - **`lwavr` and `swavr`** are the net surface long-wave and short-wave radiation (downward positive). v0.5.0 did not say which radiation flux they were.
 - **`t0m`** is the surface skin temperature, not the air temperature at the surface, and **`pres0m`** is the surface air pressure.
-- **`snow_water_equivalent`** (`sf0m` in v0.5.0) is the amount of snow on the ground, not snowfall. Hourly snowfall is available in the forecasts as `snow_accum_past_hr`.
+- **`snow_water_equivalent`** (`sf0m` in v0.5.0) is the amount of snow on the ground, measured in kg/m², not snowfall. Hourly snowfall is available in the forecasts as `snow_accum_past_hr`.
 - **`psct`** is an infrared brightness temperature. It is the cloud top temperature where there are clouds, but the ground temperature in clear sky.
 - **`r` and `r2m`** are fractions between 0 and 1. v0.5.0 gave the unit as %, but the values were the same.
 - **`u`, `v`, `u10m` and `v10m`** are eastward and northward wind components. v0.5.0 described them as relative to the model grid, but the values were already rotated to east and north, so they should not be rotated again.
