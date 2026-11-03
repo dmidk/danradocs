@@ -3,25 +3,54 @@ import xarray as xr
 import os
 import re
 
-def _retrieve_variable_description(ds):
+STORE_KINDS = {
+    "analysis": "Analysis",
+    "forecast_PT3H": "Forecast (3 h)",
+    "forecast_PT18H": "Forecast (18 h)",
+}
+
+
+def _format_units(units):
+    # e.g. "kg m-2" -> "kg m<sup>-2</sup>"
+    return re.sub(r"([a-zA-Z])(-?\d+)", r"\1<sup>\2</sup>", units)
+
+
+def _retrieve_variable_description(datasets):
     md_lines = [
-        "| Variable Name | CF Standard Name | Description | Unit |",
+        "| Variable Name | CF Standard Name | Description | Unit | "
+        + " | ".join(STORE_KINDS.values()) + " |",
         "|---------------|------------------|-------------|------|"
+        + "|".join(":---:" for _ in STORE_KINDS) + "|",
     ]
-    for var in ds.data_vars:
-        da = ds[var]
+    var_names = sorted(
+        {var for ds in datasets.values() for var in ds.data_vars} - {"danra_projection"}
+    )
+    for var in var_names:
+        da = next(ds[var] for ds in datasets.values() if var in ds)
         standard_name = da.attrs.get("standard_name", "")
         long_name = da.attrs.get("long_name", "")
-        units = da.attrs.get("units", "")
-        units = re.sub(r"\*\*(-?\d+)", lambda m: f"<sup>{m.group(1)}</sup>", units)
-        md_lines.append(f"| {var} | {standard_name} | {long_name} | {units} |")
+        units = _format_units(da.attrs.get("units", ""))
+        available = " | ".join(
+            "✓" if var in datasets[kind] else "" for kind in STORE_KINDS
+        )
+        md_lines.append(
+            f"| {var} | {standard_name} | {long_name} | {units} | {available} |"
+        )
     return md_lines
+
+
+def _open_level_type(level_type):
+    return {
+        kind: xr.open_zarr(fp_root / f"{level_type}_{kind}.zarr")
+        for kind in STORE_KINDS
+    }
+
 
 fp_root = Path(os.environ.get("DANRA_DATA_PATH"))
 
-ds_danra_sl = xr.open_zarr(fp_root / "single_levels.zarr")
-ds_danra_hl = xr.open_zarr(fp_root / "height_levels.zarr")
-ds_danra_pl = xr.open_zarr(fp_root / "pressure_levels.zarr")
+ds_danra_sl = _open_level_type("single_levels")
+ds_danra_hl = _open_level_type("height_levels")
+ds_danra_pl = _open_level_type("pressure_levels")
 
 with open("parameters.md", "w") as f:
     # Single levels
@@ -37,10 +66,10 @@ with open("parameters.md", "w") as f:
     f.write("<details>\n<summary>Height Levels</summary>\n\n")
     f.write("## Height level parameters\n\n")
     f.write("Height level refers to parameters that are defined at specific vertical levels in the atmosphere.\n")
-    altitudes = ds_danra_hl.coords.get("altitude", None)
-    if altitudes is not None:
+    heights = ds_danra_hl["analysis"].coords.get("height", None)
+    if heights is not None:
         f.write("### Available height levels (m)\n\n")
-        f.write(", ".join(str(a.item()) for a in altitudes.values))
+        f.write(", ".join(str(h.item()) for h in heights.values))
         f.write("\n\n")
     f.write("### Available parameters\n\n")
     f.write("\n".join(_retrieve_variable_description(ds_danra_hl)))
@@ -50,7 +79,7 @@ with open("parameters.md", "w") as f:
     f.write("<details>\n<summary>Pressure Levels</summary>\n\n")
     f.write("## Pressure level parameters\n\n")
     f.write("Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.\n")
-    pressures = ds_danra_pl.coords.get("pressure", None)
+    pressures = ds_danra_pl["analysis"].coords.get("pressure", None)
     if pressures is not None:
         f.write("### Available pressure levels (hPa)\n\n")
         f.write(", ".join(str(p.item()) for p in pressures.values))

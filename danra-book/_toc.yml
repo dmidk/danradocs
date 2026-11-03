@@ -14,6 +14,7 @@ parts:
     - file: docs/description.md
     - file: docs/modelspecs.md
     - file: docs/data-availability.md
+    - file: docs/changes-v0.6.1.md
     - file: docs/data-details.md
 #    - file: docs/annex.md
 #    - file: docs/references.md

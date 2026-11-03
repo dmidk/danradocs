@@ -2,29 +2,83 @@ metadata:
   version: 1
 
 sources:
-  single_levels:
-    description: DANRA single level parameters (surface and near-surface data)
+  single_levels_analysis:
+    description: DANRA single level parameters (surface and near-surface data), analysis, every 3 hours
     driver: zarr
     args:
-      urlpath: s3://dmi-danra-05/single_levels.zarr
+      urlpath: s3://dmi-danra-061/single_levels_analysis.zarr
       storage_options:
         anon: true
       consolidated: true
 
-  height_levels:
-    description: DANRA height level parameters (upper-air data)
+  single_levels_forecast_PT3H:
+    description: DANRA single level parameters (surface and near-surface data), forecasts started every 3 hours, lead times 1-3 hours
     driver: zarr
     args:
-      urlpath: s3://dmi-danra-05/height_levels.zarr
+      urlpath: s3://dmi-danra-061/single_levels_forecast_PT3H.zarr
       storage_options:
         anon: true
       consolidated: true
 
-  pressure_levels:
-    description: DANRA pressure level parameters (upper-air data)
+  single_levels_forecast_PT18H:
+    description: DANRA single level parameters (surface and near-surface data), forecasts started at 00 and 12 UTC, lead times 1-18 hours
     driver: zarr
     args:
-      urlpath: s3://dmi-danra-05/pressure_levels.zarr
+      urlpath: s3://dmi-danra-061/single_levels_forecast_PT18H.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  height_levels_analysis:
+    description: DANRA height level parameters (upper-air data), analysis, every 3 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/height_levels_analysis.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  height_levels_forecast_PT3H:
+    description: DANRA height level parameters (upper-air data), forecasts started every 3 hours, lead times 1-3 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/height_levels_forecast_PT3H.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  height_levels_forecast_PT18H:
+    description: DANRA height level parameters (upper-air data), forecasts started at 00 and 12 UTC, lead times 1-18 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/height_levels_forecast_PT18H.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  pressure_levels_analysis:
+    description: DANRA pressure level parameters (upper-air data), analysis, every 3 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/pressure_levels_analysis.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  pressure_levels_forecast_PT3H:
+    description: DANRA pressure level parameters (upper-air data), forecasts started every 3 hours, lead times 1-3 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/pressure_levels_forecast_PT3H.zarr
+      storage_options:
+        anon: true
+      consolidated: true
+
+  pressure_levels_forecast_PT18H:
+    description: DANRA pressure level parameters (upper-air data), forecasts started at 00 and 12 UTC, lead times 1-18 hours
+    driver: zarr
+    args:
+      urlpath: s3://dmi-danra-061/pressure_levels_forecast_PT18H.zarr
       storage_options:
         anon: true
       consolidated: true
