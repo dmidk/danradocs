@@ -12,6 +12,9 @@
 - Update doi and references to published paper ([#21](https://github.com/dmidk/danradocs/pull/21) @sbnielsen)
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
+### Fixed
+- Pin jupyter-book to v1 (v2 silently fails to build the book) and make the book workflow fail if no HTML output is generated
+
 
 ## [v0.2.2] - 2025-10-08
 ### Added
