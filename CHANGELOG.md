@@ -4,6 +4,7 @@
 ### Added
 - Add overview of changes to the DANRA data since v0.5.0 ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add forecast datasets to data availability, parameter tables and intake catalog ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
+- Add notebook showing how to combine analysis and forecasts into one time dimension ([#23](https://github.com/dmidk/danradocs/pull/23) @simonkamuk)
 - Add figure of observation usage to notebook ([#21](https://github.com/dmidk/danradocs/pull/21) @sbnielsen)
 - Add citation info via CITATION.cff file ([#17](https://github.com/dmidk/danradocs/pull/17) @khintz)
 - Add documentation on how to access DANRA output via intake catalog ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
