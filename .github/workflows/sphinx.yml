@@ -31,11 +31,19 @@ jobs:
             - name: Build Jupyter Book
               run: uv run jupyter-book build danra-book/
 
+            - name: Check that the Jupyter Book HTML was generated
+              run: |
+                    if [ ! -f danra-book/_build/html/index.html ]; then
+                      echo "::error::Jupyter Book build did not produce danra-book/_build/html/index.html"
+                      exit 1
+                    fi
+
             - name: Upload Jupyter Book as artifact (for debugging)
               uses: actions/upload-artifact@v4
               with:
                     name: jupyter-book
                     path: danra-book/_build/html
+                    if-no-files-found: error
 
             - name: Deploy to GitHub Pages
               if: startsWith(github.ref, 'refs/tags/')
