@@ -22,3 +22,4 @@ parts:
     chapters:
     - file: notebooks/distributions
     - file: notebooks/paper-figures
+    - file: notebooks/combine-forecast-analysis
