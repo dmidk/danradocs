@@ -33,7 +33,7 @@ Code using the old names must be updated:
 If you used any of the following with v0.5.0, check your results:
 
 - **Missing values in `cb_column`, `ct_column`, `prtp` and `icei`.** In v0.5.0, undefined points (e.g. cloud base where there are no clouds) had the value 9999, which was not marked as missing. These are now read as NaN. Statistics computed in v0.5.0 that included the 9999 values are wrong, and code that checks for `== 9999` should use `isnull()` instead.
-- **`ciwc` and `cwat`** are the mass fractions of cloud ice and cloud water on each pressure level, in kg kg<sup>-1</sup>. v0.5.0 described them as column totals in kg m<sup>-2</sup>.
+- **`ciwc` and `cwat`** are the mass fractions of cloud ice and cloud water on each pressure level, in kg kg<sup>-1</sup>. v0.5.0 incorrectly described them as column totals in kg m<sup>-2</sup>.
 - **`lwavr` and `swavr`** are the net surface long-wave and short-wave radiation (downward positive). v0.5.0 did not say which radiation flux they were.
 - **`t0m`** is the surface (skin) temperature, not the air temperature at the surface, and **`pres0m`** is the surface air pressure.
 - **`snow_water_equivalent`** (`sf0m` in v0.5.0) is the amount of snow on the ground, not snowfall. Hourly snowfall is available in the forecasts as `snow_accum_past_hr`.
