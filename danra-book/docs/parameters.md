@@ -1,13 +1,10 @@
-# DANRA Parameters
-
-DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.
-
 <details>
 <summary>Single Levels</summary>
 
-## Single level parameters
+<h3>Single level parameters</h3>
 
 Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.
+
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
 | albedo | surface_albedo | ISBA total albedo | 1 | ✓ | ✓ |  |
@@ -79,19 +76,21 @@ Single level refers to parameters that are defined at a single vertical level in
 | wevap_accum_past_hr |  | Water evaporation, accumulated over the past hour | kg m<sup>-2</sup> |  | ✓ | ✓ |
 | ws10m | wind_speed | Wind speed | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | xhail |  | AROME hail diagnostic | kg m<sup>-2</sup> | ✓ | ✓ | ✓ |
+
 </details>
 
 <details>
 <summary>Height Levels</summary>
 
-## Height level parameters
+<h3>Height level parameters</h3>
 
 Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
-### Available height levels (m)
+
+<h4>Available height levels (meters above ground)</h4>
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
 
-### Available parameters
+<h4>Available parameters</h4>
 
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
@@ -99,19 +98,21 @@ Height level refers to parameters that are defined at specific vertical levels i
 | t | air_temperature | Temperature | K | ✓ | ✓ | ✓ |
 | u | eastward_wind | u-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | v | northward_wind | v-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
+
 </details>
 
 <details>
 <summary>Pressure Levels</summary>
 
-## Pressure level parameters
+<h3>Pressure level parameters</h3>
 
 Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.
-### Available pressure levels (hPa)
+
+<h4>Available pressure levels (hPa)</h4>
 
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100
 
-### Available parameters
+<h4>Available parameters</h4>
 
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
@@ -123,4 +124,5 @@ Pressure level refers to parameters that are defined at specific pressure levels
 | u | eastward_wind | u-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | v | northward_wind | v-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | z | geopotential | Geopotential | m<sup>2</sup> s<sup>-2</sup> | ✓ | ✓ | ✓ |
+
 </details>
