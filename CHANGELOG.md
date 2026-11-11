@@ -14,9 +14,9 @@
 - Update data access to v0.6.1 datasets in the `s3://dmi-danra-061` bucket ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Update parameter descriptions to v0.6.1 metadata ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Update doi and references to published paper ([#21](https://github.com/dmidk/danradocs/pull/21) @sbnielsen)
-- Remove unused and redundant pages and files, moving the information that was not shown elsewhere into the relevant pages (@simonkamuk)
-- Generate the references page from `references.bib` (@simonkamuk)
-- Use uv instead of PDM in the setup instructions (@simonkamuk)
+- Remove unused and redundant pages and files, moving the information that was not shown elsewhere into the relevant pages ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
+- Generate the references page from `references.bib` ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
+- Use uv instead of PDM in the setup instructions ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 
