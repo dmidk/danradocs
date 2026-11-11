@@ -52,11 +52,11 @@ Single level refers to parameters that are defined at a single vertical level in
 | snow_water_equivalent | surface_snow_amount | Water equivalent of accumulated snow depth | kg m<sup>-2</sup> | ✓ | ✓ | ✓ |
 | snsub_accum_past_hr |  | Snow Sublimation, accumulated over the past hour | kg m<sup>-2</sup> |  | ✓ | ✓ |
 | soil_ice | volume_fraction_of_frozen_water_in_soil | Soil ice, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
-| soil_moisture | volume_fraction_of_condensed_water_in_soil | Soil moisture, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
+| soil_moisture |  | Soil moisture, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
 | soil_temperature | soil_temperature | Soil temperature, root zone | K | ✓ | ✓ |  |
 | sshf_accum_past_hr |  | Sensible heat flux, accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
 | surface_geopotential | surface_geopotential | Geopotential | m<sup>2</sup> s<sup>-2</sup> | ✓ |  |  |
-| surface_soil_moisture | volume_fraction_of_condensed_water_in_soil | Surface soil moisture | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
+| surface_soil_moisture |  | Surface soil moisture | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
 | swavr | surface_net_downward_shortwave_flux | Short-wave radiation flux | W m<sup>-2</sup> | ✓ | ✓ | ✓ |
 | swavr_accum_past_hr |  | Short-wave radiation flux, accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
 | swavr_toa_accum_past_hr |  | Short-wave radiation flux (atmosph.top), accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
