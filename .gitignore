@@ -5,7 +5,6 @@ __pycache__/
 
 .venv
 _build
-pdm.lock
 
 # C extensions
 *.so
