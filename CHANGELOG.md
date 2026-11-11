@@ -13,8 +13,12 @@
 ### Changed
 - Update data access to v0.6.1 datasets in the `s3://dmi-danra-061` bucket ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Update parameter descriptions to v0.6.1 metadata ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
+- Add the packages needed to run the notebooks to the project dependencies ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
 - Update doi and references to published paper ([#21](https://github.com/dmidk/danradocs/pull/21) @sbnielsen)
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
+
+### Fixed
+- Fix missing selection of the wind park locations in the distributions notebook and update its output to v0.6.1 ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
 
 
 ## [v0.2.2] - 2025-10-08
