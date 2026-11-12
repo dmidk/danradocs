@@ -27,7 +27,8 @@ def _retrieve_variable_description(datasets):
     )
     for var in var_names:
         da = next(ds[var] for ds in datasets.values() if var in ds)
-        standard_name = da.attrs.get("standard_name", "")
+        # <wbr> lets the browser wrap long standard names after underscores
+        standard_name = da.attrs.get("standard_name", "").replace("_", "_<wbr>")
         long_name = da.attrs.get("long_name", "")
         units = _format_units(da.attrs.get("units", ""))
         available = " | ".join(
