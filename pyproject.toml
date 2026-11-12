@@ -27,5 +27,5 @@ readme = "README.md"
 license = {text = "MIT"}
 
 
-[tool.pdm]
-distribution = false
+[tool.uv]
+package = false

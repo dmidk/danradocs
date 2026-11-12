@@ -16,6 +16,9 @@
 - Add the packages needed to run the notebooks to the project dependencies ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
 - Include the generated parameter tables in the parameter details page instead of copying them ([#29](https://github.com/dmidk/danradocs/pull/29) @simonkamuk)
 - Update doi and references to published paper ([#21](https://github.com/dmidk/danradocs/pull/21) @sbnielsen)
+- Remove unused and redundant pages and files, moving the information that was not shown elsewhere into the relevant pages ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
+- Generate the references page from `references.bib` ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
+- Use uv instead of PDM in the setup instructions ([#31](https://github.com/dmidk/danradocs/pull/31) @simonkamuk)
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 ### Fixed
