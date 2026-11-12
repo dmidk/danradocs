@@ -19,8 +19,6 @@ dependencies = [
     "matplotlib>=3.11.2",
     "cartopy>=0.26.0",
     "pyproj>=3.8.0",
-    "cdsapi>=0.7.7",
-    "cfgrib>=0.9.15.1",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
