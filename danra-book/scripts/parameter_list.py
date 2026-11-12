@@ -52,38 +52,69 @@ ds_danra_sl = _open_level_type("single_levels")
 ds_danra_hl = _open_level_type("height_levels")
 ds_danra_pl = _open_level_type("pressure_levels")
 
-with open("parameters.md", "w") as f:
-    # Single levels
-    f.write("# DANRA Parameters\n\n")
-    f.write("DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.\n\n")
-    f.write("<details>\n<summary>Single Levels</summary>\n\n")
-    f.write("## Single level parameters\n\n")
-    f.write("Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.\n")
-    f.write("\n".join(_retrieve_variable_description(ds_danra_sl)))
-    f.write("\n</details>\n\n")
 
-    # Height levels
-    f.write("<details>\n<summary>Height Levels</summary>\n\n")
-    f.write("## Height level parameters\n\n")
-    f.write("Height level refers to parameters that are defined at specific vertical levels in the atmosphere.\n")
-    heights = ds_danra_hl["analysis"].coords.get("height", None)
-    if heights is not None:
-        f.write("### Available height levels (m)\n\n")
-        f.write(", ".join(str(h.item()) for h in heights.values))
-        f.write("\n\n")
-    f.write("### Available parameters\n\n")
-    f.write("\n".join(_retrieve_variable_description(ds_danra_hl)))
-    f.write("\n</details>\n\n")
+def _dropdown(summary, title, description, datasets, levels=None):
+    """One collapsible section of the parameter tables.
 
-    # Pressure levels
-    f.write("<details>\n<summary>Pressure Levels</summary>\n\n")
-    f.write("## Pressure level parameters\n\n")
-    f.write("Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.\n")
-    pressures = ds_danra_pl["analysis"].coords.get("pressure", None)
-    if pressures is not None:
-        f.write("### Available pressure levels (hPa)\n\n")
-        f.write(", ".join(str(p.item()) for p in pressures.values))
-        f.write("\n\n")
-    f.write("### Available parameters\n\n")
-    f.write("\n".join(_retrieve_variable_description(ds_danra_pl)))
-    f.write("\n</details>\n")
+    Raw HTML headings are used instead of markdown headings, since a markdown
+    heading starts a new section and would break the <details> block.
+    """
+    lines = [
+        "<details>",
+        f"<summary>{summary}</summary>",
+        "",
+        f"<h3>{title}</h3>",
+        "",
+        description,
+        "",
+    ]
+    if levels is not None:
+        label, values = levels
+        lines += [
+            f"<h4>{label}</h4>",
+            "",
+            ", ".join(str(v.item()) for v in values),
+            "",
+            "<h4>Available parameters</h4>",
+            "",
+        ]
+    lines += _retrieve_variable_description(datasets)
+    lines += ["", "</details>"]
+    return "\n".join(lines)
+
+
+sections = [
+    _dropdown(
+        "Single Levels",
+        "Single level parameters",
+        "Single level refers to parameters that are defined at a single "
+        "vertical level in the atmosphere or at the surface.",
+        ds_danra_sl,
+    ),
+    _dropdown(
+        "Height Levels",
+        "Height level parameters",
+        "Height level refers to parameters that are defined at specific "
+        "vertical levels in the atmosphere.",
+        ds_danra_hl,
+        levels=(
+            "Available height levels (meters above ground)",
+            ds_danra_hl["analysis"].height.values,
+        ),
+    ),
+    _dropdown(
+        "Pressure Levels",
+        "Pressure level parameters",
+        "Pressure level refers to parameters that are defined at specific "
+        "pressure levels in the atmosphere.",
+        ds_danra_pl,
+        levels=(
+            "Available pressure levels (hPa)",
+            ds_danra_pl["analysis"].pressure.values,
+        ),
+    ),
+]
+
+# Included from docs/data-details.md
+out_path = Path(__file__).parent.parent / "docs" / "parameters.md"
+out_path.write_text("\n\n".join(sections) + "\n")

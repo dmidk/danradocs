@@ -1,13 +1,10 @@
-# DANRA Parameters
-
-DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.
-
 <details>
 <summary>Single Levels</summary>
 
-## Single level parameters
+<h3>Single level parameters</h3>
 
 Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.
+
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
 | albedo | surface_albedo | ISBA total albedo | 1 | ✓ | ✓ |  |
@@ -52,11 +49,11 @@ Single level refers to parameters that are defined at a single vertical level in
 | snow_water_equivalent | surface_snow_amount | Water equivalent of accumulated snow depth | kg m<sup>-2</sup> | ✓ | ✓ | ✓ |
 | snsub_accum_past_hr |  | Snow Sublimation, accumulated over the past hour | kg m<sup>-2</sup> |  | ✓ | ✓ |
 | soil_ice | volume_fraction_of_frozen_water_in_soil | Soil ice, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
-| soil_moisture | volume_fraction_of_condensed_water_in_soil | Soil moisture, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
+| soil_moisture |  | Soil moisture, root zone | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
 | soil_temperature | soil_temperature | Soil temperature, root zone | K | ✓ | ✓ |  |
 | sshf_accum_past_hr |  | Sensible heat flux, accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
 | surface_geopotential | surface_geopotential | Geopotential | m<sup>2</sup> s<sup>-2</sup> | ✓ |  |  |
-| surface_soil_moisture | volume_fraction_of_condensed_water_in_soil | Surface soil moisture | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
+| surface_soil_moisture |  | Surface soil moisture | m<sup>3</sup> m<sup>-3</sup> | ✓ | ✓ |  |
 | swavr | surface_net_downward_shortwave_flux | Short-wave radiation flux | W m<sup>-2</sup> | ✓ | ✓ | ✓ |
 | swavr_accum_past_hr |  | Short-wave radiation flux, accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
 | swavr_toa_accum_past_hr |  | Short-wave radiation flux (atmosph.top), accumulated over the past hour | W s m<sup>-2</sup> |  | ✓ | ✓ |
@@ -79,19 +76,21 @@ Single level refers to parameters that are defined at a single vertical level in
 | wevap_accum_past_hr |  | Water evaporation, accumulated over the past hour | kg m<sup>-2</sup> |  | ✓ | ✓ |
 | ws10m | wind_speed | Wind speed | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | xhail |  | AROME hail diagnostic | kg m<sup>-2</sup> | ✓ | ✓ | ✓ |
+
 </details>
 
 <details>
 <summary>Height Levels</summary>
 
-## Height level parameters
+<h3>Height level parameters</h3>
 
 Height level refers to parameters that are defined at specific vertical levels in the atmosphere.
-### Available height levels (m)
+
+<h4>Available height levels (meters above ground)</h4>
 
 30, 50, 75, 100, 150, 200, 250, 300, 500
 
-### Available parameters
+<h4>Available parameters</h4>
 
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
@@ -99,19 +98,21 @@ Height level refers to parameters that are defined at specific vertical levels i
 | t | air_temperature | Temperature | K | ✓ | ✓ | ✓ |
 | u | eastward_wind | u-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | v | northward_wind | v-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
+
 </details>
 
 <details>
 <summary>Pressure Levels</summary>
 
-## Pressure level parameters
+<h3>Pressure level parameters</h3>
 
 Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.
-### Available pressure levels (hPa)
+
+<h4>Available pressure levels (hPa)</h4>
 
 1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100
 
-### Available parameters
+<h4>Available parameters</h4>
 
 | Variable Name | CF Standard Name | Description | Unit | Analysis | Forecast (3 h) | Forecast (18 h) |
 |---------------|------------------|-------------|------|:---:|:---:|:---:|
@@ -123,4 +124,5 @@ Pressure level refers to parameters that are defined at specific pressure levels
 | u | eastward_wind | u-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | v | northward_wind | v-component of wind | m s<sup>-1</sup> | ✓ | ✓ | ✓ |
 | z | geopotential | Geopotential | m<sup>2</sup> s<sup>-2</sup> | ✓ | ✓ | ✓ |
+
 </details>
