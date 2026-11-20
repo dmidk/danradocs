@@ -28,10 +28,13 @@ jobs:
               with:
                     enable-cache: true
 
+            # -W turns warnings, including failed notebook execution, into errors;
+            # --keep-going reports all of them before failing
             - name: Build Jupyter Book
-              run: uv run jupyter-book build danra-book/
+              run: uv run jupyter-book build -W -n --keep-going danra-book/
 
             - name: Upload Jupyter Book as artifact (for debugging)
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                     name: jupyter-book
