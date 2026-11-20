@@ -78,6 +78,8 @@ These are only available in the forecast datasets.
 - <code>ugst10m_past_hr</code> and <code>vgst10m_past_hr</code> are the components of the maximum wind gust over the hour ending at the valid time.
 - <code>tmax2m_since_analysis</code> and <code>tmin2m_since_analysis</code> are the maximum and minimum 2 m temperature since the start of the forecast, so the period they cover grows with the lead time.
 
+For why DANRA provides both 3-hourly and 18-hourly forecasts, and which to use for accumulated precipitation, see [Accumulated variables, forecasting and data assimilation](data-assimilation-forecasts.md).
+
 <h3>Sign conventions</h3>
 The surface fluxes <code>wevap_accum_past_hr</code>, <code>snsub_accum_past_hr</code>, <code>lhe_accum_past_hr</code>, <code>lhsub_accum_past_hr</code> and <code>sshf_accum_past_hr</code> are positive downwards, so evaporation, sublimation and upward heat fluxes are negative.
 The momentum fluxes <code>uflx_accum_past_hr</code> and <code>vflx_accum_past_hr</code> are positive upwards, so they are negative under a westerly and southerly wind, respectively.

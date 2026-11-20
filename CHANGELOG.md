@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Added
+- Add page explaining accumulated variables, forecasting and data assimilation, and why both 3-hourly and 18-hourly forecasts are provided ([#22](https://github.com/dmidk/danradocs/pull/22) @leifdenby)
 - Add overview of changes to the DANRA data since v0.5.0 ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add forecast datasets to data availability, parameter tables and intake catalog ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add notebook showing how to combine analysis and forecasts into one time dimension ([#23](https://github.com/dmidk/danradocs/pull/23) @simonkamuk)
@@ -11,6 +12,8 @@
 - Add links to preprint and documentation as badges in README.md ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 ### Changed
+- Convert the data assimilation notebook to a documentation page, since it contains no code ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
+- Remove the redundant documentation index page, which duplicated the table of contents and contained a broken link ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
 - Update data access to v0.6.1 datasets in the `s3://dmi-danra-061` bucket ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Update parameter descriptions to v0.6.1 metadata ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add the packages needed to run the notebooks to the project dependencies ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
@@ -23,6 +26,7 @@
 - Update project dependencies to be able to execute jupyter book and tests ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 ### Fixed
+- Add the data assimilation and references pages to the table of contents, so they are shown in the book ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
 - Fix missing selection of the wind park locations in the distributions notebook and update its output to v0.6.1 ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
 - Add the missing observation usage data for the paper figures notebook ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
 - Remove incorrect CF standard name from `soil_moisture` and `surface_soil_moisture` in the parameter tables ([#29](https://github.com/dmidk/danradocs/pull/29) @simonkamuk)
