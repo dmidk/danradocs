@@ -44,15 +44,15 @@ Alternatively, the data can be accessed directly from the S3 object store. For e
 The forecast datasets have the time a forecast was started (`analysis_time`) and the lead time (`forecast_period`) as dimensions. The time each value is valid for is given by the coordinate `valid_time = analysis_time + forecast_period`.
 Some parameters, such as accumulated precipitation, are only available in the forecasts; see [Details about parameters](data-details.md).
 
-- [s3://dmi-danra-061/single_levels_analysis.zarr](s3://dmi-danra-061/single_levels_analysis.zarr)
-- [s3://dmi-danra-061/single_levels_forecast_PT3H.zarr](s3://dmi-danra-061/single_levels_forecast_PT3H.zarr)
-- [s3://dmi-danra-061/single_levels_forecast_PT18H.zarr](s3://dmi-danra-061/single_levels_forecast_PT18H.zarr)
-- [s3://dmi-danra-061/height_levels_analysis.zarr](s3://dmi-danra-061/height_levels_analysis.zarr)
-- [s3://dmi-danra-061/height_levels_forecast_PT3H.zarr](s3://dmi-danra-061/height_levels_forecast_PT3H.zarr)
-- [s3://dmi-danra-061/height_levels_forecast_PT18H.zarr](s3://dmi-danra-061/height_levels_forecast_PT18H.zarr)
-- [s3://dmi-danra-061/pressure_levels_analysis.zarr](s3://dmi-danra-061/pressure_levels_analysis.zarr)
-- [s3://dmi-danra-061/pressure_levels_forecast_PT3H.zarr](s3://dmi-danra-061/pressure_levels_forecast_PT3H.zarr)
-- [s3://dmi-danra-061/pressure_levels_forecast_PT18H.zarr](s3://dmi-danra-061/pressure_levels_forecast_PT18H.zarr)
+- `s3://dmi-danra-061/single_levels_analysis.zarr`
+- `s3://dmi-danra-061/single_levels_forecast_PT3H.zarr`
+- `s3://dmi-danra-061/single_levels_forecast_PT18H.zarr`
+- `s3://dmi-danra-061/height_levels_analysis.zarr`
+- `s3://dmi-danra-061/height_levels_forecast_PT3H.zarr`
+- `s3://dmi-danra-061/height_levels_forecast_PT18H.zarr`
+- `s3://dmi-danra-061/pressure_levels_analysis.zarr`
+- `s3://dmi-danra-061/pressure_levels_forecast_PT3H.zarr`
+- `s3://dmi-danra-061/pressure_levels_forecast_PT18H.zarr`
 
 Fetching one of these datasets with Python and xarray using simple loading is as simple as
 ```
