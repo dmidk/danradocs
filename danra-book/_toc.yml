@@ -10,7 +10,6 @@ parts:
 
   - caption: Documentation
     chapters:
-    - file: docs/documentation.md
     - file: docs/description.md
     - file: docs/modelspecs.md
     - file: docs/data-availability.md
