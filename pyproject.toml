@@ -7,7 +7,7 @@ authors = [
     {name = "Søren Borg Thorsen", email = "sbn@dmi.dk"}
 ]
 dependencies = [
-    "jupyter-book>=1.0.0",
+    "jupyter-book>=1.0.0,<2",
     "xarray>=2024.5.0",
     "dask>=2024.5.2",
     "gcsfs>=2024.6.0",
