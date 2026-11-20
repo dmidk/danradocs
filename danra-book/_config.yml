@@ -6,6 +6,10 @@ author: DMI NWP Team
 logo: logo.png
 copyright: '2025'
 
+# Version of the DANRA dataset these docs describe. A release is published to
+# https://dmidk.github.io/danradocs/<data_version>/ (see .github/workflows/sphinx.yml)
+data_version: v0.6.1
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
