@@ -8,7 +8,7 @@ copyright: '2025'
 
 # Version of the DANRA dataset these docs describe. A release is published to
 # https://dmidk.github.io/danradocs/<data_version>/ (see .github/workflows/sphinx.yml)
-data_version: v0.6.1
+data_version: &data_version v0.6.1
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -41,3 +41,22 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+# Version dropdown in the sidebar, listing the versions in versions.json at the
+# site root (maintained by .github/workflows/sphinx.yml)
+sphinx:
+  recursive_update: true
+  config:
+    html_theme_options:
+      switcher:
+        json_url: /danradocs/versions.json
+        version_match: *data_version
+      # versions.json only exists on the published site, so don't fetch it at build time
+      check_switcher: false
+    html_sidebars:
+      "**":
+        - navbar-logo.html
+        - version-switcher
+        - icon-links.html
+        - search-button-field.html
+        - sbt-sidebar-nav.html
