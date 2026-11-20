@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Added
 - Publish the documentation for each DANRA data version at `https://dmidk.github.io/danradocs/<data version>/`, with the site root and missing pages redirecting to the most recent release ([#35](https://github.com/dmidk/danradocs/pull/35) @simonkamuk)
+- Add a version dropdown to the sidebar listing all published versions of the documentation ([#35](https://github.com/dmidk/danradocs/pull/35) @simonkamuk)
 - Add page explaining accumulated variables, forecasting and data assimilation, and why both 3-hourly and 18-hourly forecasts are provided ([#22](https://github.com/dmidk/danradocs/pull/22) @leifdenby)
 - Add overview of changes to the DANRA data since v0.5.0 ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add forecast datasets to data availability, parameter tables and intake catalog ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
