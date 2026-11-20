@@ -10,14 +10,15 @@ parts:
 
   - caption: Documentation
     chapters:
-    - file: docs/documentation.md
     - file: docs/description.md
     - file: docs/modelspecs.md
     - file: docs/data-availability.md
     - file: docs/changes-v0.6.1.md
     - file: docs/data-details.md
-#    - file: docs/annex.md
-#    - file: docs/references.md
+    - file: docs/data-assimilation-forecasts.md
+    - url: https://github.com/dmidk/danradocs/issues
+      title: Known issues
+    - file: docs/references.md
 
   - caption: User Examples
     chapters:
