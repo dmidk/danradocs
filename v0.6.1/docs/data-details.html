@@ -1,0 +1,1425 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Details about parameters &#8212; DANRA-book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="../_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/data-details';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Accumulated variables, forecasting and data assimilation" href="data-assimilation-forecasts.html" />
+    <link rel="prev" title="Changes since v0.5.0" href="changes-v0.6.1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><b>Release candidate:</b> this is the documentation for DANRA v0.6.1, which is not yet publicly released, so the data paths on these pages do not work yet. For the currently released data (v0.5.0), see <a href="https://dmidk.github.io/danradocs/">dmidk.github.io/danradocs</a>.</div>
+</aside>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="DANRA-book - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="DANRA-book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to the DANRA-Book!
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About DANRA</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Documentation</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="description.html">Description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modelspecs.html">Model Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-availability.html">Data Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes-v0.6.1.html">Changes since v0.5.0</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Details about parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-assimilation-forecasts.html">Accumulated variables, forecasting and data assimilation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/dmidk/danradocs/issues">Known issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">User Examples</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/distributions.html">Looking at distributions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/paper-figures.html">DANRA figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notebooks/combine-forecast-analysis.html">Combining analysis and forecasts into one time dimension</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/dmidk/danradocs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/dmidk/danradocs/issues/new?title=Issue%20on%20page%20%2Fdocs/data-details.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/docs/data-details.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Details about parameters</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danra-parameters">DANRA Parameters</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="details-about-parameters">
+<h1>Details about parameters<a class="headerlink" href="#details-about-parameters" title="Link to this heading">#</a></h1>
+<p>This section describes special parameters in the DANRA dataset.</p>
+<section id="danra-parameters">
+<h2>DANRA Parameters<a class="headerlink" href="#danra-parameters" title="Link to this heading">#</a></h2>
+<p>DANRA output is ordered into three main categories based on the vertical levels of the data: surface or single level (SL), height levels (HL), and pressure levels (PL). Each category contains various meteorological parameters, which are described in detail below.
+Each category is available as an analysis dataset and two forecast datasets (see <a class="reference internal" href="data-availability.html"><span class="std std-doc">Data availability</span></a>); the tables below show which parameters are available in which dataset.</p>
+<details>
+<summary>Single Levels</summary>
+<h3>Single level parameters</h3>
+<p>Single level refers to parameters that are defined at a single vertical level in the atmosphere or at the surface.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+<th class="head text-center"><p>Analysis</p></th>
+<th class="head text-center"><p>Forecast (3 h)</p></th>
+<th class="head text-center"><p>Forecast (18 h)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>albedo</p></td>
+<td><p>surface_<wbr>albedo</p></td>
+<td><p>ISBA total albedo</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>cape_column</p></td>
+<td><p>atmosphere_<wbr>convective_<wbr>available_<wbr>potential_<wbr>energy_<wbr>wrt_<wbr>surface</p></td>
+<td><p>CAPE out of the model</p></td>
+<td><p>J kg<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>cb_column</p></td>
+<td><p>cloud_<wbr>base_<wbr>altitude</p></td>
+<td><p>Cloud base</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>ct_column</p></td>
+<td><p>cloud_<wbr>top_<wbr>altitude</p></td>
+<td><p>Cloud top</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>dni_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Direct normal irradiance, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>fog</p></td>
+<td><p>fog_<wbr>area_<wbr>fraction</p></td>
+<td><p>Fog area fraction</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>freezing_height</p></td>
+<td><p>freezing_<wbr>level_<wbr>altitude</p></td>
+<td><p>Height of the 0 degC isotherm</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>grad_accum_past_hr</p></td>
+<td><p>integral_<wbr>wrt_<wbr>time_<wbr>of_<wbr>surface_<wbr>downwelling_<wbr>shortwave_<wbr>flux_<wbr>in_<wbr>air</p></td>
+<td><p>Global radiation flux, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>grpl_accum_past_hr</p></td>
+<td><p>graupel_<wbr>fall_<wbr>amount</p></td>
+<td><p>Graupel, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>grpl_column</p></td>
+<td><p>atmosphere_<wbr>mass_<wbr>content_<wbr>of_<wbr>graupel</p></td>
+<td><p>Graupel</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>hcc</p></td>
+<td><p>high_<wbr>type_<wbr>cloud_<wbr>area_<wbr>fraction</p></td>
+<td><p>High cloud cover</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>icei</p></td>
+<td><p></p></td>
+<td><p>Icing index</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>lcc</p></td>
+<td><p>low_<wbr>type_<wbr>cloud_<wbr>area_<wbr>fraction</p></td>
+<td><p>Low cloud cover</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>lhe_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Latent heat flux through evaporation, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>lhsub_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Latent Heat Sublimation, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>lsm</p></td>
+<td><p>land_<wbr>binary_<wbr>mask</p></td>
+<td><p>Land cover (1=land, 0=sea)</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>lwavr</p></td>
+<td><p>surface_<wbr>net_<wbr>downward_<wbr>longwave_<wbr>flux</p></td>
+<td><p>Long-wave radiation flux</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>lwavr_accum_past_hr</p></td>
+<td><p>integral_<wbr>wrt_<wbr>time_<wbr>of_<wbr>surface_<wbr>downwelling_<wbr>longwave_<wbr>flux_<wbr>in_<wbr>air</p></td>
+<td><p>Long-wave radiation flux, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>mcc</p></td>
+<td><p>medium_<wbr>type_<wbr>cloud_<wbr>area_<wbr>fraction</p></td>
+<td><p>Medium cloud cover</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>mld</p></td>
+<td><p>atmosphere_<wbr>boundary_<wbr>layer_<wbr>thickness</p></td>
+<td><p>Height of the planetary boundary layer</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>nlwrs_accum_past_hr</p></td>
+<td><p>integral_<wbr>wrt_<wbr>time_<wbr>of_<wbr>surface_<wbr>net_<wbr>downward_<wbr>longwave_<wbr>flux</p></td>
+<td><p>Net long-wave radiation flux (surface), accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>nlwrt_toa</p></td>
+<td><p>toa_<wbr>net_<wbr>downward_<wbr>longwave_<wbr>flux</p></td>
+<td><p>Net long-wave radiation flux (atmosph.top)</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>nlwrt_toa_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Net long-wave radiation flux (atmosph.top), accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>nswrs_accum_past_hr</p></td>
+<td><p>integral_<wbr>wrt_<wbr>time_<wbr>of_<wbr>surface_<wbr>net_<wbr>downward_<wbr>shortwave_<wbr>flux</p></td>
+<td><p>Net short-wave radiation flux (surface), accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>nswrt_toa</p></td>
+<td><p>toa_<wbr>net_<wbr>downward_<wbr>shortwave_<wbr>flux</p></td>
+<td><p>Net short-wave radiation flux (atmosph.top)</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>nswrt_toa_accum_past_hr</p></td>
+<td><p>integral_<wbr>wrt_<wbr>time_<wbr>of_<wbr>toa_<wbr>net_<wbr>downward_<wbr>shortwave_<wbr>flux</p></td>
+<td><p>Net short-wave radiation flux (atmosph.top), accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>pres0m</p></td>
+<td><p>surface_<wbr>air_<wbr>pressure</p></td>
+<td><p>Pressure</p></td>
+<td><p>Pa</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>pres_seasurface</p></td>
+<td><p>air_<wbr>pressure_<wbr>at_<wbr>mean_<wbr>sea_<wbr>level</p></td>
+<td><p>Mean sea level pressure</p></td>
+<td><p>Pa</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>prtp</p></td>
+<td><p>predominant_<wbr>precipitation_<wbr>type_<wbr>at_<wbr>surface</p></td>
+<td><p>Precipitation Type</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>psct</p></td>
+<td><p>brightness_<wbr>temperature</p></td>
+<td><p>Pseudo satellite image: infrared brightness temperature (cloud top where cloudy, ground where clear)</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>pscw</p></td>
+<td><p></p></td>
+<td><p>Pseudo satellite image: cloud water reflectivity (visible)</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>pstb</p></td>
+<td><p>brightness_<wbr>temperature</p></td>
+<td><p>Pseudo satellite image: water vapour Tb</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>pstbc</p></td>
+<td><p>brightness_<wbr>temperature</p></td>
+<td><p>Pseudo satellite image: water vapour Tb + correction for clouds</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>pwat_column</p></td>
+<td><p>atmosphere_<wbr>mass_<wbr>content_<wbr>of_<wbr>water_<wbr>vapor</p></td>
+<td><p>Precipitable water</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>q2m</p></td>
+<td><p>specific_<wbr>humidity</p></td>
+<td><p>Specific humidity</p></td>
+<td><p>kg kg<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>r2m</p></td>
+<td><p>relative_<wbr>humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>rain_accum_past_hr</p></td>
+<td><p>rainfall_<wbr>amount</p></td>
+<td><p>Rain, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>roughness_length</p></td>
+<td><p>surface_<wbr>roughness_<wbr>length</p></td>
+<td><p>Surface roughness length</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>snow_accum_past_hr</p></td>
+<td><p>snowfall_<wbr>amount</p></td>
+<td><p>Snow, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>snow_water_equivalent</p></td>
+<td><p>surface_<wbr>snow_<wbr>amount</p></td>
+<td><p>Water equivalent of accumulated snow depth</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>snsub_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Snow Sublimation, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>soil_ice</p></td>
+<td><p>volume_<wbr>fraction_<wbr>of_<wbr>frozen_<wbr>water_<wbr>in_<wbr>soil</p></td>
+<td><p>Soil ice, root zone</p></td>
+<td><p>m<sup>3</sup> m<sup>-3</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>soil_moisture</p></td>
+<td><p></p></td>
+<td><p>Soil moisture, root zone</p></td>
+<td><p>m<sup>3</sup> m<sup>-3</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>soil_temperature</p></td>
+<td><p>soil_<wbr>temperature</p></td>
+<td><p>Soil temperature, root zone</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>sshf_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Sensible heat flux, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>surface_geopotential</p></td>
+<td><p>surface_<wbr>geopotential</p></td>
+<td><p>Geopotential</p></td>
+<td><p>m<sup>2</sup> s<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>surface_soil_moisture</p></td>
+<td><p></p></td>
+<td><p>Surface soil moisture</p></td>
+<td><p>m<sup>3</sup> m<sup>-3</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>swavr</p></td>
+<td><p>surface_<wbr>net_<wbr>downward_<wbr>shortwave_<wbr>flux</p></td>
+<td><p>Short-wave radiation flux</p></td>
+<td><p>W m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>swavr_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Short-wave radiation flux, accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>swavr_toa_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Short-wave radiation flux (atmosph.top), accumulated over the past hour</p></td>
+<td><p>W s m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>t0m</p></td>
+<td><p>surface_<wbr>temperature</p></td>
+<td><p>Surface (skin) temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>t2m</p></td>
+<td><p>air_<wbr>temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>t_surface_isba</p></td>
+<td><p>surface_<wbr>temperature</p></td>
+<td><p>ISBA surface temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>tcc</p></td>
+<td><p>cloud_<wbr>area_<wbr>fraction</p></td>
+<td><p>Total cloud cover</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>thermal_roughness_length</p></td>
+<td><p>surface_<wbr>roughness_<wbr>length_<wbr>for_<wbr>heat_<wbr>in_<wbr>air</p></td>
+<td><p>Surface roughness length for heat</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>tmax2m_since_analysis</p></td>
+<td><p>air_<wbr>temperature</p></td>
+<td><p>Maximum temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>tmin2m_since_analysis</p></td>
+<td><p>air_<wbr>temperature</p></td>
+<td><p>Minimum temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>tp_accum_past_hr</p></td>
+<td><p>precipitation_<wbr>amount</p></td>
+<td><p>Total precipitation, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>u10m</p></td>
+<td><p>eastward_<wbr>wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>uflx_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Momentum flux, u-component, accumulated over the past hour</p></td>
+<td><p>Pa s</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>ugst10m_past_hr</p></td>
+<td><p></p></td>
+<td><p>Gust, u-component</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>v10m</p></td>
+<td><p>northward_<wbr>wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>vflx_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Momentum flux, v-component, accumulated over the past hour</p></td>
+<td><p>Pa s</p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>vgst10m_past_hr</p></td>
+<td><p></p></td>
+<td><p>Gust, v-component</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>vis0m</p></td>
+<td><p>visibility_<wbr>in_<wbr>air</p></td>
+<td><p>Visibility</p></td>
+<td><p>m</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>wdir10m</p></td>
+<td><p>wind_<wbr>from_<wbr>direction</p></td>
+<td><p>Wind direction</p></td>
+<td><p>degree</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>wevap_accum_past_hr</p></td>
+<td><p></p></td>
+<td><p>Water evaporation, accumulated over the past hour</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>ws10m</p></td>
+<td><p>wind_<wbr>speed</p></td>
+<td><p>Wind speed</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>xhail</p></td>
+<td><p></p></td>
+<td><p>AROME hail diagnostic</p></td>
+<td><p>kg m<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Height Levels</summary>
+<h3>Height level parameters</h3>
+<p>Height level refers to parameters that are defined at specific vertical levels in the atmosphere.</p>
+<h4>Available height levels (meters above ground)</h4>
+<p>30, 50, 75, 100, 150, 200, 250, 300, 500</p>
+<h4>Available parameters</h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+<th class="head text-center"><p>Analysis</p></th>
+<th class="head text-center"><p>Forecast (3 h)</p></th>
+<th class="head text-center"><p>Forecast (18 h)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>r</p></td>
+<td><p>relative_<wbr>humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>t</p></td>
+<td><p>air_<wbr>temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>u</p></td>
+<td><p>eastward_<wbr>wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>v</p></td>
+<td><p>northward_<wbr>wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Pressure Levels</summary>
+<h3>Pressure level parameters</h3>
+<p>Pressure level refers to parameters that are defined at specific pressure levels in the atmosphere.</p>
+<h4>Available pressure levels (hPa)</h4>
+<p>1000, 950, 925, 900, 850, 800, 700, 600, 500, 400, 300, 250, 200, 100</p>
+<h4>Available parameters</h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Variable Name</p></th>
+<th class="head"><p>CF Standard Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Unit</p></th>
+<th class="head text-center"><p>Analysis</p></th>
+<th class="head text-center"><p>Forecast (3 h)</p></th>
+<th class="head text-center"><p>Forecast (18 h)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ciwc</p></td>
+<td><p>mass_<wbr>fraction_<wbr>of_<wbr>cloud_<wbr>ice_<wbr>in_<wbr>air</p></td>
+<td><p>Cloud ice</p></td>
+<td><p>kg kg<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>cwat</p></td>
+<td><p>mass_<wbr>fraction_<wbr>of_<wbr>cloud_<wbr>liquid_<wbr>water_<wbr>in_<wbr>air</p></td>
+<td><p>Cloud water</p></td>
+<td><p>kg kg<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>r</p></td>
+<td><p>relative_<wbr>humidity</p></td>
+<td><p>Relative humidity</p></td>
+<td><p>1</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>t</p></td>
+<td><p>air_<wbr>temperature</p></td>
+<td><p>Temperature</p></td>
+<td><p>K</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>tw</p></td>
+<td><p>upward_<wbr>air_<wbr>velocity</p></td>
+<td><p>Vertical velocity</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>u</p></td>
+<td><p>eastward_<wbr>wind</p></td>
+<td><p>u-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-even"><td><p>v</p></td>
+<td><p>northward_<wbr>wind</p></td>
+<td><p>v-component of wind</p></td>
+<td><p>m s<sup>-1</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+<tr class="row-odd"><td><p>z</p></td>
+<td><p>geopotential</p></td>
+<td><p>Geopotential</p></td>
+<td><p>m<sup>2</sup> s<sup>-2</sup></p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+<td class="text-center"><p>✓</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>Special Parameters</summary>
+<h2> Special parameters</h2>
+The following parameters are encoded using a different schema than WMO standards. Thus, we provide a brief description of those below.
+<h3>Precipitation type</h3>
+The precipitation type, <code>prtp</code>, describes the most prevalent type of precipitation in the given time frame. Where there is no precipitation the value is missing (NaN). The following types are available:
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>Drizzle</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>Rain</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>Sleet</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>Snow</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Freezing drizzle</p></td>
+</tr>
+<tr class="row-odd"><td><p>5</p></td>
+<td><p>Freezing rain</p></td>
+</tr>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>Graupel</p></td>
+</tr>
+<tr class="row-odd"><td><p>7</p></td>
+<td><p>Hail</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Icing index</h3>
+The icing index, <code>icei</code>, is a measure of the risk of icing in the atmosphere. The index is calculated as the maximum risk of icing somewhere in the atmosphere column. The index is an integer between 1 and 4, corresponding to the following risk levels. Where there is no risk of icing the value is missing (NaN).
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Code</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Trace</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Light</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Moderate</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Severe</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>AROME Hail diagnostic</h3>
+The hail diagnostic, <code>xhail</code>, is a measure of the risk of hail. It is the maximum total column graupel in kg/m^2 since previous post-processing. Values above 16 kg/m^2 are considered to be a risk of hail.
+<h3>Missing values</h3>
+Some parameters are only defined in part of the domain or under certain conditions. Where they are undefined, the value is missing and is read as NaN by xarray:
+<ul class="simple">
+<li><p><code>cb_column</code> and <code>ct_column</code>: where there are no clouds.</p></li>
+<li><p><code>prtp</code>: where there is no precipitation.</p></li>
+<li><p><code>icei</code>: where there is no risk of icing.</p></li>
+<li><p><code>albedo</code>, <code>soil_ice</code>, <code>soil_moisture</code>, <code>surface_soil_moisture</code>, <code>soil_temperature</code> and <code>t_surface_isba</code>: outside the land surface scheme, i.e. over sea. Use the missing values, not <code>lsm</code>, to find where these are valid, since the land surface scheme also covers some points that <code>lsm</code> classifies as sea.</p></li>
+</ul>
+<h3>Surface temperatures</h3>
+<ul class="simple">
+<li><p><code>t0m</code> is the surface (skin) temperature, averaged over all surface types in the grid box.</p></li>
+<li><p><code>t_surface_isba</code> is the surface (skin) temperature of the land surface only.</p></li>
+<li><p><code>soil_temperature</code> is the mean temperature of the root-zone soil layer.</p></li>
+</ul>
+<h3>Radiation</h3>
+The instantaneous and accumulated radiation parameters hold different quantities, even where their names are similar:
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Quantity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code>lwavr</code></p></td>
+<td><p>Net surface long-wave radiation (downwelling minus upwelling)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code>swavr</code></p></td>
+<td><p>Net surface short-wave radiation (downwelling minus reflected)</p></td>
+</tr>
+<tr class="row-even"><td><p><code>lwavr_accum_past_hr</code></p></td>
+<td><p>Downwelling surface long-wave radiation</p></td>
+</tr>
+<tr class="row-odd"><td><p><code>swavr_accum_past_hr</code></p></td>
+<td><p>Direct (beam) short-wave radiation on a horizontal surface</p></td>
+</tr>
+<tr class="row-even"><td><p><code>grad_accum_past_hr</code></p></td>
+<td><p>Global radiation: direct plus diffuse downwelling short-wave radiation</p></td>
+</tr>
+<tr class="row-odd"><td><p><code>dni_accum_past_hr</code></p></td>
+<td><p>Direct normal irradiance, perpendicular to the solar beam</p></td>
+</tr>
+<tr class="row-even"><td><p><code>nlwrs_accum_past_hr</code></p></td>
+<td><p>Net surface long-wave radiation</p></td>
+</tr>
+<tr class="row-odd"><td><p><code>nswrs_accum_past_hr</code></p></td>
+<td><p>Net surface short-wave radiation</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><code>albedo</code> is only valid in daylight.</p>
+<h3>Accumulated and interval parameters</h3>
+These are only available in the forecast datasets.
+<ul class="simple">
+<li><p><code>*_accum_past_hr</code> parameters are accumulated over the hour ending at the valid time. Radiation and heat fluxes are therefore in W s m<sup>-2</sup> (J m<sup>-2</sup>); divide by 3600 to get the mean flux in W m<sup>-2</sup>. Precipitation amounts are in kg m<sup>-2</sup>, which is equal to mm. Very small negative values can occur due to numerical noise.</p></li>
+<li><p><code>ugst10m_past_hr</code> and <code>vgst10m_past_hr</code> are the components of the maximum wind gust over the hour ending at the valid time.</p></li>
+<li><p><code>tmax2m_since_analysis</code> and <code>tmin2m_since_analysis</code> are the maximum and minimum 2 m temperature since the start of the forecast, so the period they cover grows with the lead time.</p></li>
+</ul>
+<p>For why DANRA provides both 3-hourly and 18-hourly forecasts, and which to use for accumulated precipitation, see <a class="reference internal" href="data-assimilation-forecasts.html"><span class="std std-doc">Accumulated variables, forecasting and data assimilation</span></a>.</p>
+<h3>Sign conventions</h3>
+The surface fluxes <code>wevap_accum_past_hr</code>, <code>snsub_accum_past_hr</code>, <code>lhe_accum_past_hr</code>, <code>lhsub_accum_past_hr</code> and <code>sshf_accum_past_hr</code> are positive downwards, so evaporation, sublimation and upward heat fluxes are negative.
+The momentum fluxes <code>uflx_accum_past_hr</code> and <code>vflx_accum_past_hr</code> are positive upwards, so they are negative under a westerly and southerly wind, respectively.
+<h3>Freezing level</h3>
+<code>freezing_height</code> is the height of the 0 °C isotherm. Where the whole atmospheric column is below freezing, the value is extrapolated below the surface and can be negative.
+</details></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="changes-v0.6.1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Changes since v0.5.0</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="data-assimilation-forecasts.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Accumulated variables, forecasting and data assimilation</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#danra-parameters">DANRA Parameters</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By DMI NWP Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
