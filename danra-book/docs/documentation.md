@@ -10,6 +10,4 @@
 
 [Known issues](issues.md)
 
-[Annex](annex.md)
-
 [References](references.md)
