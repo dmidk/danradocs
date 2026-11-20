@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 ### Added
+- Publish the documentation for each DANRA data version at `https://dmidk.github.io/danradocs/<data version>/`, with the site root and missing pages redirecting to the most recent release ([#35](https://github.com/dmidk/danradocs/pull/35) @simonkamuk)
 - Add page explaining accumulated variables, forecasting and data assimilation, and why both 3-hourly and 18-hourly forecasts are provided ([#22](https://github.com/dmidk/danradocs/pull/22) @leifdenby)
 - Add overview of changes to the DANRA data since v0.5.0 ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add forecast datasets to data availability, parameter tables and intake catalog ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
@@ -12,6 +13,7 @@
 - Add links to preprint and documentation as badges in README.md ([#16](https://github.com/dmidk/danradocs/pull/16) @observingClouds)
 
 ### Changed
+- Deploy to a version folder on GitHub Pages instead of replacing the whole site, and document the release process in the README ([#35](https://github.com/dmidk/danradocs/pull/35) @simonkamuk)
 - Convert the data assimilation notebook to a documentation page, since it contains no code ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
 - Remove the redundant documentation index page, which duplicated the table of contents and contained a broken link ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
 - Update data access to v0.6.1 datasets in the `s3://dmi-danra-061` bucket ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
