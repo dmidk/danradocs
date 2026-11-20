@@ -2,10 +2,12 @@
 ## Model Grid and Domain
 DANRA is produced on a Lambert Conformal grid with a horizontal resolution of 2.5 km, covering a domain of 800 x 600 grid points, including an 11-point extension zone. As a result, output is available on a 789 x 589 horizontal grid. The vertical resolution consists of 65 hybrid sigma/pressure levels.
 
+The output grid is centred at 56.7°N, 8.2°E. Its corners are at approximately 47.6°N, 2.1°W (south-west), 51.2°N, 24.6°E (south-east), 59.5°N, 12.1°W (north-west) and 64.4°N, 24.4°E (north-east).
+
 ![DANRA Domain](./figures/domain.png)
 
 ## Boundary Conditions
-The boundary conditions for the DANRA reanalysis are derived from the ECMWF Global Reanalysis (ERA5) dataset, which provides global atmospheric data at a resolution of approximately 31 km. Note: Due to the coupling to coarse-resolution lateral boundary conditions, the performance of DANRA near the boundaries is expected to be overall worse than in the interior of the domain.
+The boundary conditions for the DANRA reanalysis are derived from the ECMWF Global Reanalysis (ERA5) dataset, which provides global atmospheric data at a resolution of approximately 31 km. DANRA uses the hourly ERA5 analyses as lateral boundary conditions. This differs from time-critical operational systems, which have to use forecasts from a global model at the boundaries. Note: Due to the coupling to coarse-resolution lateral boundary conditions, the performance of DANRA near the boundaries is expected to be overall worse than in the interior of the domain.
 
 ## Coordinate Reference System (CRS)
 The DANRA dataset uses a Lambert Conic Conformal projection with the following specifications:

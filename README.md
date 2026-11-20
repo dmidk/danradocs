@@ -14,13 +14,21 @@ This Jupyter book serves as an interactive guide and documentation for the DANRA
 ## Getting Started
 
 To get started with the DANRA book, either visit the documentation at https://dmidk.github.io/danradocs/ or clone the repository and install the required dependencies to run the notebooks locally.
-We recommend using PDM to create a virtual environment to manage the dependencies.
+We recommend using [uv](https://docs.astral.sh/uv/) to create a virtual environment and install the dependencies.
 
 ```bash
-git clone git@gitlab.dmi.dk:nwp/danra/danra-book.git
-cd danra-book
-pdm install
+git clone git@github.com:dmidk/danradocs.git
+cd danradocs
+uv sync
 ```
+
+To build the book locally, run
+
+```bash
+uv run jupyter-book build danra-book/
+```
+
+and open `danra-book/_build/html/index.html` in a browser.
 
 Navigate to the `danra-book/notebooks` directory and start explore and/or create new notebooks.
 To add a new notebook, to the jupyter book, you can add the notebook to the `danra-book/notebooks` directory and add the path to the notebook in the `_toc.yml` file.
