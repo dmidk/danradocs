@@ -13,6 +13,7 @@
 
 ### Changed
 - Convert the data assimilation notebook to a documentation page, since it contains no code ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
+- Remove the redundant documentation index page, which duplicated the table of contents and contained a broken link ([#33](https://github.com/dmidk/danradocs/pull/33) @simonkamuk)
 - Update data access to v0.6.1 datasets in the `s3://dmi-danra-061` bucket ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Update parameter descriptions to v0.6.1 metadata ([#24](https://github.com/dmidk/danradocs/pull/24) @simonkamuk)
 - Add the packages needed to run the notebooks to the project dependencies ([#28](https://github.com/dmidk/danradocs/pull/28) @simonkamuk)
