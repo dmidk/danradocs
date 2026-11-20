@@ -45,7 +45,45 @@ jobs:
                     path: danra-book/_build/html
                     if-no-files-found: error
 
+            - name: Check out the published site
+              if: startsWith(github.ref, 'refs/tags/')
+              uses: actions/checkout@v4
+              with:
+                    ref: gh-pages
+                    path: gh-pages
+
+            # Each release is published to its own folder, named after the DANRA data
+            # version (data_version in danra-book/_config.yml), and added to the version
+            # dropdown (versions.json). Other versions on the site are kept. Release
+            # candidate tags (containing "rc") only update their folder and dropdown
+            # entry; other releases also point the site root to it.
             - name: Deploy to GitHub Pages
               if: startsWith(github.ref, 'refs/tags/')
               run: |
-                    uv run ghp-import -n -p -f danra-book/_build/html
+                    version=$(uv run python -c "import yaml; print(yaml.safe_load(open('danra-book/_config.yml'))['data_version'])")
+                    if [[ ! "$version" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+                      echo "::error::data_version in danra-book/_config.yml must look like v1.2.3, got '$version'"
+                      exit 1
+                    fi
+                    is_rc=false
+                    if [[ "$GITHUB_REF_NAME" == *rc* ]]; then is_rc=true; fi
+
+                    rm -rf "gh-pages/$version"
+                    cp -r danra-book/_build/html "gh-pages/$version"
+                    python3 .github/pages/update_versions.py gh-pages/versions.json "$version" "$is_rc"
+                    if [[ "$is_rc" == false ]]; then
+                      sed "s/__DATA_VERSION__/$version/g" .github/pages/index.html > gh-pages/index.html
+                    fi
+                    cp .github/pages/404.html gh-pages/404.html
+                    touch gh-pages/.nojekyll
+
+                    cd gh-pages
+                    git config user.name "github-actions[bot]"
+                    git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                    git add -A
+                    if git diff --cached --quiet; then
+                      echo "Nothing changed on the published site"
+                      exit 0
+                    fi
+                    git commit -m "Publish $version docs from $GITHUB_REF_NAME"
+                    git push

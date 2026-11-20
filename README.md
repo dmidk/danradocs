@@ -32,3 +32,15 @@ and open `danra-book/_build/html/index.html` in a browser.
 
 Navigate to the `danra-book/notebooks` directory and start explore and/or create new notebooks.
 To add a new notebook, to the jupyter book, you can add the notebook to the `danra-book/notebooks` directory and add the path to the notebook in the `_toc.yml` file.
+
+## Releasing
+
+The documentation is published for each version of the DANRA dataset, at `https://dmidk.github.io/danradocs/<data version>/`, e.g. https://dmidk.github.io/danradocs/v0.6.1/.
+https://dmidk.github.io/danradocs/ redirects to the most recent release, and so do URLs that no longer exist.
+
+To publish a release:
+
+1. Set `data_version` in `danra-book/_config.yml` to the version of the dataset the docs describe.
+2. Push a tag, e.g. `git tag v0.3.0 && git push upstream v0.3.0`. CI builds the book, publishes it to the folder for `data_version` and points https://dmidk.github.io/danradocs/ to it. Publishing the same data version again replaces that folder.
+
+A tag containing `rc` (e.g. `v0.3.0rc1`) is published to the folder for `data_version` as well, but the site root is not changed. Use this to share docs for a dataset version that is not public yet.
